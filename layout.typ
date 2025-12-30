@@ -64,13 +64,27 @@
 }
 
 // Schreibpapier
-#let grid4 = tiling(size: (4mm, 4mm))[ #place(line(start: (0%,0%), end: (0%,100%), stroke: (thickness: 0.4pt, dash: "dotted", paint: luma(50%)))) #place(line(start: (0%,0%), end: (100%,0%), stroke: (thickness: 0.4pt, dash: "dotted", paint: luma(50%)))) ] 
+#let schreibpapier(height: none, size: 4mm) = context { 
+  let grid_height = height
+  if height != none {
+    assert(type(height) == length, message: "Height muss eine Länge sein (z.B. 10pt)")
+  } else {
+    grid_height = 1fr
+  }
+  
+  block(height: grid_height, layout(place => { 
+  let columns = calc.floor(place.width / size)
+  let rows = calc.floor(place.height / size)
 
-#let schreibpapier(height: 1fr) = { rect(fill: grid4, width: 100%, height: height, stroke: none) }
-
-#let cbox(color: black, term) = align(center)[
-  #box(stroke: color + 0.5pt, inset: 1em, term)
-]
+  block({
+    grid(
+      columns: (size,) * columns,
+      rows: (size,) * rows,
+      stroke: gray + .1pt,
+    )
+  })
+}))
+}
 
 // Schöne Box 
 #let showbox(title, color, doc) = showybox(
