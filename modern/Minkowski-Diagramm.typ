@@ -57,6 +57,3 @@ Was soll nun gelten? War der Besen drin, ja oder nein? Um diese Frage zu beantwo
     })
   })
 ]
-
-// 	\draw (0,-0.45)--node[sloped,above,very near end]{\small Weltlinie Besenspitze}++(51.3402:2.5cm);
-// 	\draw (0,-0.45)--++(51.3402+180:1.1cm);
