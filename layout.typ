@@ -1,6 +1,8 @@
 #import "@preview/showybox:2.0.4": showybox
-#import "@preview/zap:0.5.0"
-#import "@preview/cetz:0.4.2"
+#import "@preview/zap:0.5.0" as zap
+#import "@preview/cetz:0.4.2" as cetz
+#import "@preview/unify:0.7.1": unit, qty, num, add-unit as unify
+#import "@preview/cetz-plot:0.1.3" as cetz-plot
 
 #let header-footer-font="TeX Gyre Heros"
 
@@ -63,6 +65,11 @@
   doc
 }
 
+// einfache Box mit Farbrand
+#let cbox(color: black, term) = align(center)[
+  #box(stroke: color + 0.5pt, inset: 1em, term)
+]
+
 // Schreibpapier
 #let schreibpapier(height: none, size: 4mm) = context { 
   let grid_height = height
@@ -80,7 +87,7 @@
     grid(
       columns: (size,) * columns,
       rows: (size,) * rows,
-      stroke: gray + .1pt,
+      stroke: aqua + .1pt,
     )
   })
 }))

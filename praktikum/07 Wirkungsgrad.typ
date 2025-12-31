@@ -1,6 +1,3 @@
-#import "@preview/cetz:0.4.2"
-#import "@preview/cetz-plot:0.1.3"
-#import "@preview/unify:0.7.1": num,qty,unit
 #import "@preview/fletcher:0.5.8" as fletcher: diagram, node, edge, shapes.chevron
 #import "../layout.typ": *
 

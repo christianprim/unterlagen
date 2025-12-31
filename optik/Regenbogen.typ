@@ -1,7 +1,3 @@
-#import "@preview/cetz:0.4.2"
-#import "@preview/cetz-plot:0.1.3"
-#import "@preview/unify:0.7.1": num,qty,unit
-#import "@preview/zap:0.5.0"
 #import "../layout.typ": *
 
 #let gebiet = "Geometrische Optik"

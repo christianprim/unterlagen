@@ -1,6 +1,3 @@
-#import "@preview/cetz:0.4.2"
-#import "@preview/cetz-plot:0.1.3"
-#import "@preview/unify:0.7.1": num,qty,unit
 #import "../layout.typ": *
 
 #let gebiet = "Mechanik"
@@ -41,4 +38,4 @@ In der Presse "20 Minuten" vom #text(number-type: "old-style")[5\. März 2002] s
   #schreibpapier(height: 1.62cm)
   
 + Wie gross wäre der Bremsweg der Kokosnuss mit den angegebenen Daten?
-  #schreibpapier(height: 1fr)
+  #schreibpapier()
