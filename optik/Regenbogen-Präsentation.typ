@@ -1,7 +1,7 @@
 #import "@preview/touying:0.6.1": *
 #import themes.metropolis: *
 #import "@preview/numbly:0.1.0": numbly
-#import "../layout.typ": haupt-farbe
+#import "../layout.typ": haupt-farbe, cetz
 
 #let gebiet = "Geometrische Optik"
 #let haupt-farbe = haupt-farbe(gebiet: gebiet)
