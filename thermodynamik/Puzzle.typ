@@ -254,6 +254,7 @@ Prozentuale Längenänderung pro °C zwischen 1. und 2. Messung:
   #text(fill: blue)[$alpha$] nennt man den Längenausdehnungskoeffizienten, der materialabhängig ist.
 
   Die neue Länge des Stabes beträgt somit (Formeln von oben einsetzen und vereinfachen):
+
   $#text(fill: green)[$l$]=#text(fill: green)[$l_0$]+#text(fill: green)[$Delta l$]=$
   
   Bestimmen Sie die Einheit von #text(fill: blue)[$alpha$]: $[alpha] =$
@@ -459,7 +460,7 @@ _Bemerkung: Temperaturen in Grad Celsius °C werden in der Physik mit dem griech
 
   $#text(fill: red)[$gamma$]=$
 
-- In einem mit Helium der Temperatur $qty("-13", "Celsius")$ gefüllten Ballon befindet sich ein Luftvolumen von \unit{0.006 cubic meter}. Der Ballon wird nun durch Sonneneinstrahlung auf $qty("33", "Celsius")$ aufgeheizt. Der Volumenausdehnungskoeffizient von Helium beträgt $#text(fill: red)[$gamma$] = qty("3.66e-3", "per Celsius")$.
+- In einem mit Helium der Temperatur $qty("-13", "Celsius")$ gefüllten Ballon befindet sich ein Luftvolumen von $qty("0.006", "m^3")$. Der Ballon wird nun durch Sonneneinstrahlung auf $qty("33", "Celsius")$ aufgeheizt. Der Volumenausdehnungskoeffizient von Helium beträgt $#text(fill: red)[$gamma$] = qty("3.66e-3", "per Celsius")$.
   + Drücken Sie das Volumen in Litern aus.
   + Wie gross ist das Volumen der Luft nach Aufheizung des Ballons durch die Sonne?
   #schreibpapier(height: 2.41cm)
