@@ -28,7 +28,7 @@ Sieger ist, wer zuletzt unten ankommt. Disqualifiziert wird, wer gar nicht erst 
     
     + *Berechnung und Zuschnitt:* Berechnen Sie basierend auf diesen Daten das ideale Volumen des Isolationsmaterials für Ihre Figur. Schneiden Sie anschliessend einen entsprechenden Quader mit dem bereitgelegten Werkzeug aus.
     
-    + *Montage:* Bringen Sie, wie im Bild dargestellt, oben und unten einen Nagel im Isolationsmaterial an.
+    + *Montage:* Bringen Sie, wie im Bild dargestellt, oben und unten eine Schraube an. Im optimalen Fall berühren sich diese Schrauben.
   ],
   [
     #cetz.canvas({
@@ -68,9 +68,9 @@ Sieger ist, wer zuletzt unten ankommt. Disqualifiziert wird, wer gar nicht erst 
 
       // Nägel
       on-layer(1, circle((0, 2), radius: (.2, .04), fill: black))
-      on-layer(1, line((0, 2), (0, 2.35), stroke: 2pt))
+      on-layer(1, line((0, 2), (0, 2.45 ), stroke: 2pt))
       on-layer(1, circle((0, 3), radius: (.2, .04), fill: black))
-      on-layer(1, line((0, 3), (0, 2.65), stroke: 2pt))
+      on-layer(1, line((0, 3), (0, 2.55), stroke: 2pt))
     })
   ]
 )
