@@ -9,6 +9,14 @@
 
 #show: arbeitsblatt.with(titel: titel, gebiet: gebiet, gebiet-farbe: haupt-farbe)
 
+#set page(
+  footer: [
+      #set text(font: "TeX Gyre Heros", fill: haupt-farbe)
+      #v(0.5em) // Vertikaler Abstand
+      _KZN_ #h(1fr) _Technik_
+  ]
+)
+
 = Die ersten Wärmearbeitsmaschinen
 
 === Ablauf
@@ -66,8 +74,6 @@ Am 5. Januar 1769 erhielt der schottische Mechaniker James #smallcaps[Watt] das 
 )
 
 Heisser Frischdampf wird aus einem Dampfkessel der Maschine zugeführt. Ein kleiner Steuerkolben lässt Dampf nur auf die linke Seite des (grösseren) Arbeitskolbens strömen (s. Abb). Dadurch wird dieser auf die rechte Seite gedrückt und versetzt ein Schwungrad in Bewegung. Der Steuerkolben, der ebenfalls mit dem Schwungrad verbunden ist, klemmt die Dampfzufuhr zum Arbeitskolben ab und öffnet die Dampfzufuhr auf die rechte Seite des Arbeitskolbens, wodurch sich dieser wieder nach links bewegt. Das Ganze läuft dauernd so weiter. Anzumerken ist noch, dass durch den Steuerkolben jeweils in dem Moment, in welchem z.B. rechts die Dampfzufuhr geöffnet wird, links ein Kanal öffnet, durch den der sich noch im linken Teil befindliche Dampf nach aussen entweichen kann. Dieser Kanal ist im Modell oben als „U-förmige“ Aussparung zu erkennen.
-
-#text(size: 8pt)[Die Drehzahl kann mit einem Fliehkraftregler, wie sie ihn bei den Kreisbewegungen kennengelernt haben, durch Regulieren der Dampfzufuhr konstant gehalten werden.]
 
 Die Dampfmaschine nach diesem Prinzip erreicht einen Wirkungsgrad von bis zu 25%. Das heisst, dass ein Viertel der hineingesteckten Energie in Bewegung umgewandelt wird. Der Rest ist Abwärme.
 

@@ -9,6 +9,15 @@
 
 #show: arbeitsblatt.with(titel: titel, gebiet: gebiet, gebiet-farbe: haupt-farbe)
 
+#set page(
+  footer: [
+      #set text(font: "TeX Gyre Heros", fill: haupt-farbe)
+      #v(0.5em) // Vertikaler Abstand
+      _KZN_ #h(1fr) _Technik_
+  ]
+)
+
+
 = Benzinmotoren
 
 === Ablauf
@@ -29,7 +38,7 @@ Bei den Benzinmotoren unterscheidet man zwischen dem 2-Takt- und dem 4-Takt-Moto
   image("../bilder/4takt.png")
 )
 
-N. #smallcaps[Otto] stellte seinen Verbrennungsmotor #text(number-type: "old-style")[1867 vor. 1883] wurde er von den Herren #smallcaps[Daimler] und #smallcaps[Benz] weiterentwickelt. Heute erreicht dieser Motor Wirkungsgrade von maximal 35%. Die Funktionsweise kann in vier Takte unterteilt werden.
+Nicolaus #smallcaps[Otto] stellte seinen Verbrennungsmotor #text(number-type: "old-style")[1867 vor. 1883] wurde er von den Herren #smallcaps[Daimler] und #smallcaps[Benz] weiterentwickelt. Heute erreicht dieser Motor Wirkungsgrade von maximal 35%. Die Funktionsweise kann in vier Takte unterteilt werden.
 
 _1. Takt_: Der Kolben ist oben und beginnt sich nach unten zu bewegen. In diesem Moment öffnet das Einlassventil und das Treibstoff-Luft-Gemisch wird in den Zylinder gesogen.
 
@@ -58,5 +67,5 @@ _2. Takt_: Das komprimierte Gemisch wird entzündet (s. Abb. b unten in der Mitt
 - Was sind die Vor- und Nachteile der beiden Motorenarten im Vergleich? Welcher ist leistungsfähiger, welcher ist billiger in der Herstellung, bei welchem können die Abgase geringer gehalten werden? Begründe deine Antworten.
 #schreibpapier(height: 2cm)
 
-- Liegt der Wirkungsgrad des 2-Takt-Motors eher über oder unter demjenigen des Otto-Motors?
+- Liegt der Wirkungsgrad des 2-Takt-Motors eher über oder unter demjenigen des #smallcaps[Otto]-Motors?
 #schreibpapier()
