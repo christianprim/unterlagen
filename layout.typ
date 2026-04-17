@@ -1,6 +1,6 @@
 #import "@preview/showybox:2.0.4": showybox
 #import "@preview/zap:0.5.0" as zap
-#import "@preview/cetz:0.4.2" as cetz
+#import "@preview/cetz:0.5.0" as cetz
 #import "@preview/unify:0.7.1": unit, qty, num, add-unit as unify
 #import "@preview/cetz-plot:0.1.3" as cetz-plot
 
