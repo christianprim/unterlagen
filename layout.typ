@@ -1,8 +1,9 @@
 #import "@preview/showybox:2.0.4": showybox
 #import "@preview/zap:0.5.0" as zap
 #import "@preview/cetz:0.5.0" as cetz
-#import "@preview/unify:0.7.1": unit, qty, num, add-unit as unify
+#import "@preview/unify:0.7.1": unit, qty, num, add-unit 
 #import "@preview/cetz-plot:0.1.3" as cetz-plot
+#import "@preview/numbly:0.1.0" as numbly
 
 #let header-footer-font="TeX Gyre Heros"
 
@@ -62,6 +63,8 @@
   show heading: it => text(font: "TeX Gyre Heros")[#emph[#it]]
   show heading.where(level: 1): it => emph[#it]
   show math.equation: set text(font: "TeX Gyre Pagella Math")
+
+  add-unit("Lichtjahr", "LJ", "upright(\"LJ\")")
   doc
 }
 
