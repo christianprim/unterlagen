@@ -10,18 +10,24 @@
 #set enum(numbering: "1.")
 
 #set table(
-  fill: (_, y) => if y< 1 { haupt-farbe.transparentize(80%) },
+  fill: (_, y) => if y < 1 { haupt-farbe.transparentize(80%) },
   stroke: (_, y) => (
-      x: none,
-      top: if y == 0 { 1pt } else { if y == 1 { 0.5pt } else { 0pt }},
-      bottom: 1pt,
+    x: none,
+    top: if y == 0 { 1pt } else { if y == 1 { 0.5pt } else { 0pt } },
+    bottom: 1pt,
   ),
 )
 
 #show: arbeitsblatt.with(titel: titel, gebiet: gebiet, gebiet-farbe: haupt-farbe)
 
-#set page(numbering: "1", header: context{
-  let header-gradient = gradient.linear(haupt-farbe, haupt-farbe.lighten(70%), haupt-farbe.lighten(100%), white, angle: 90deg)
+#set page(numbering: "1", header: context {
+  let header-gradient = gradient.linear(
+    haupt-farbe,
+    haupt-farbe.lighten(70%),
+    haupt-farbe.lighten(100%),
+    white,
+    angle: 90deg,
+  )
   place(dx: -2cm, dy: 0cm)[
     #rect(height: 1cm, width: 21cm, fill: header-gradient)
   ]
@@ -47,9 +53,9 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
     Damit wir alle von demselben sprechen, lernen wir gleich zu Beginn nützliches Vokabular:
 
     Der Einfallswinkel #text(fill: red)[$alpha$] ist der Winkel zwischen dem einfallenden Lichtstrahl und dem Lot.
-    
+
     Der Reflexionswinkel #text(fill: blue)[$beta$] ist der Winkel zwischen dem reflektierten (=zurückgeworfenen) Lichtstrahl und dem Lot.
-    
+
     Das _Lot_ steht immer senkrecht zur Oberfläche. Wir wählen als Oberfläche nicht Mondgestein sondern einen ebenen Spiegel, weil dieser sehr viel Licht ohne Streuung reflektiert (siehe auch Kasten auf #ref(<mond>, form: "page")).
   ],
   [
@@ -75,23 +81,39 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
 
       line("einfallend.end", (rel: (-4, 0)), stroke: (dash: "dash-dotted"), name: "lot")
 
-      cetz.angle.angle("einfallend.end", "einfallend", "lot", radius: .65, stroke: red, label: text(fill: red, baseline: -0.02em)[$alpha$], label-radius: .45)
-      cetz.angle.angle("einfallend.end", "lot", "reflektiert", radius: .65, stroke: blue, label: text(fill: blue, baseline: 0.06em)[$beta$], label-radius: .45)
-      
+      cetz.angle.angle(
+        "einfallend.end",
+        "einfallend",
+        "lot",
+        radius: .65,
+        stroke: red,
+        label: text(fill: red, baseline: -0.02em)[$alpha$],
+        label-radius: .45,
+      )
+      cetz.angle.angle(
+        "einfallend.end",
+        "lot",
+        "reflektiert",
+        radius: .65,
+        stroke: blue,
+        label: text(fill: blue, baseline: 0.06em)[$beta$],
+        label-radius: .45,
+      )
+
       content("lot", [Lot], anchor: "south", padding: 2pt)
       content("einfallend.end", [Spiegel], anchor: "west", padding: 5pt)
     })
-  ]
+  ],
 )
 
-#v(-1em)
+#v(-1.5em)
 == Aufgabe
 + Bestimmen Sie die Richtung des reflektierten Strahls in Abhängigkeit vom einfallenden Strahl.
 
   Dazu gehen Sie am Besten wie folgt vor:
-  
+
   - Klicken Sie solange auf den `on / mode / off` -Knopf der LaserRayBox, bis ein einzelner Lichtstrahl erzeugt wird.
-  
+
   - Stellen Sie den kleinen Spiegel in die Mitte der Skalenscheibe auf, sodass die Linie, die mit 0 angeschrieben ist, senkrecht zum Spiegel steht. Lassen Sie den roten Lichtstrahl zum Fusspunkt des Lotes auf den Spiegel fallen.
 
   - Verfolgen Sie den Verlauf von Lichtstrahlen mit verschiedenen Einfallswinkeln (0°, 20°, 45°, 75°) und tragen Sie die Messergebnisse für den Reflexionswinkel in die Tabelle ein:
@@ -100,20 +122,20 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
       #table(
         columns: (auto, auto),
         align: center,
-        [Einfallswinkel], [Reflexionswinkel], 
+        [Einfallswinkel], [Reflexionswinkel],
         [$qty("0", "degree")$], [],
-        [$qty("20", "degree")$], [], 
-        [$qty("45", "degree")$], [], 
-        [$qty("75", "degree")$], []
+        [$qty("20", "degree")$], [],
+        [$qty("45", "degree")$], [],
+        [$qty("75", "degree")$], [],
       )
     ]
 
   - Was stellen Sie fest? Formulieren Sie einen Satz! (Reflexionsgesetz)
     #schreibpapier(height: 3.21cm)
-    
+
   - Was beobachten Sie, wenn Sie 5 Strahlen auf den Spiegel richten? Drücken Sie dazu ein paar Mal auf den Knopf der LaserRayBox. Wie verlaufen die parallelen Lichtstrahlen?
     #schreibpapier(height: 3.21cm)
-    
+
   - Stellen Sie folgende Anordnung auf. Wählen Sie einen nicht zu grossen Gegenstand:
     #v(1em)
 
@@ -122,11 +144,11 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
         import cetz.draw: *
 
         set-style(stroke: .5pt)
-        
+
         rect((-1, .5), (rel: (3, 1)), radius: .5, fill: haupt-farbe.lighten(70%), name: "gegenstand")
         line((6, -2), (0, 4), stroke: 1pt, name: "spiegel")
 
-        mark((3, -2), (rel: (0,-1)), width: .25, scale: 2.5, symbol: "barbed")
+        mark((3, -2), (rel: (0, -1)), width: .25, scale: 2.5, symbol: "barbed")
         arc((2.83, -1.54), start: 110deg, stop: 70deg, radius: .5)
         arc((2.9, -1.53), start: -180deg, stop: 0deg, radius: (.1, .02), stroke: blue + 1pt)
         circle((3, -1.53), radius: (.06, .01))
@@ -147,13 +169,13 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
     gutter: .5cm,
     align: (left, horizon),
     [
-        - Stellen Sie die zwei ebenen Spiegel senkrecht zueinander und betrachten Sie drei verschieden schräg einfallende Lichtstrahlen auf den Spiegel 1. Was beobachten Sie?
-          #schreibpapier(height: 4.01cm)
-    ], 
+      - Stellen Sie die zwei ebenen Spiegel senkrecht zueinander und betrachten Sie drei verschieden schräg einfallende Lichtstrahlen auf den Spiegel 1. Was beobachten Sie?
+        #schreibpapier(height: 4.01cm)
+    ],
     [
       #cetz.canvas({
         import cetz.draw: *
-  
+
         scope({
           rotate(30deg)
           line((-3, 0), (1.2, 0), name: "spiegel1")
@@ -164,7 +186,7 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
           mark("s", "s.end", symbol: "barbed", stroke: orange)
           line((-1, 2), (0, 0), stroke: yellow, name: "s")
           mark("s", "s.end", symbol: "barbed", stroke: yellow)
-          line((0, 0), (1, 2/3), stroke: red, name: "s")
+          line((0, 0), (1, 2 / 3), stroke: red, name: "s")
           mark("s", "s.end", symbol: "barbed", stroke: red)
           line((0, 0), (1, 1), stroke: orange, name: "s")
           mark("s", "s.end", symbol: "barbed", stroke: orange)
@@ -174,7 +196,7 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
         content("spiegel1", angle: "spiegel1.end", [Spiegel 1], anchor: "north", padding: 2pt)
         content("spiegel2", angle: "spiegel1.end", [Spiegel 2], anchor: "south", padding: 2pt)
       })
-    ]
+    ],
   )
 
 
@@ -189,7 +211,12 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
       #table(
         columns: (2cm, 2cm, 2cm, 2cm, 2cm),
         align: center,
-        [], text(fill: red)[$alpha_1$], text(fill: blue)[$beta_1$], text(fill: red)[$alpha_2$], text(fill: blue)[$beta_2$],
+        [],
+        text(fill: red)[$alpha_1$],
+        text(fill: blue)[$beta_1$],
+        text(fill: red)[$alpha_2$],
+        text(fill: blue)[$beta_2$],
+
         [1\. Strahl], [$qty("56", "degree")$], [], [], [],
         [2\. Strahl], [$qty("45", "degree")$], [], [], [],
         [3\. Strahl], [$qty("27", "degree")$], [], [], [],
@@ -198,37 +225,37 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
 
   - Finden Sie eine Beziehung zwischen #text(fill: red)[$alpha_1$] und #text(fill: blue)[$beta_2$] heraus, und beweisen Sie diese mit Hilfe der Geometrie und des Reflexionsgesetzes.
     #schreibpapier(height: 5.21cm)
-    
+
   - Blicken Sie selbst in den Winkelspiegel. Was stellen Sie fest, wenn Sie sich kämmen wollen?
     #schreibpapier()
 
-  
+
   #showbox("Aus Umwelt und Technik", haupt-farbe)[
     Autofahrer sehen andere Verkehrsteilnehmer oft nur im _Rückspiegel_. Der Blick in den Rückspiegel zeigt aber nicht alles, was sich hinter oder neben dem Fahrzeug befindet.
-  
+
     Ein Kind auf dem Fahrrad befindet sich manchmal "im toten Winkel": Der Fahrer kann es im Rückspiegel nicht sehen. Daher sollten Velofahrer in solchen Situationen rechtzeitig anhalten -- und zwar nicht neben einem Fahrzeug, sondern hinter ihm!
-    
+
     Um im Strassenverkehr bei Dunkelheit besser gesehen zu werden, ist neben heller Kleidung das Anbringen von _Licht reflektierenden Streifen_ ein gutes Mittel. "Sohlenblitze" und Katzenaugen werfen das Licht in jene Richtung zurück, aus der es kommt. Sie sind daher aus der Richtung der Lichtquelle besonders gut zu sehen.
-    
+
     Solche reflektierende Streifen funktionieren genau mit demselben Prinzip des Winkelspiegels.
-  
+
     Zurück zum Mond:
-  
+
     #grid(
       columns: (1fr, auto),
       gutter: .5cm,
       [
         Amerikanische Astronauten haben im Rahmen der Apollo-14-Mission einen _Tripelspiegel_ (Winkelspiegel in drei Dimensionen) auf den Mond aufgestellt. Um die Entfernung des Mondes zu bestimmen, wurde ein kurzer Laserblitz von der Erde zum Spiegel geschickt und von dort zur Erde reflektiert. Aus der Laufzeit des Lichts liess sich die Entfernung Erde-Mond auf einige Zentimeter genau bestimmen.
-    
+
         Die sandige Mondoberfläche würde zwar das Licht auch zurückwerfen (sonst würden wir den Mond ja nicht sehen!) doch erfolgt dies in allen Richtungen (=Streuung!), was eine Messung verunmöglichen würde.
       ],
       [
         #image("../bilder/winkelspiegel.jpg", width: 6cm)
-      ]
-    )  
+      ],
+    )
   ]
   #v(1em)<mond>
-  
+
 + Weshalb ist das Bild im Spiegel seitenverkehrt?
   - Halten Sie das Plexiglas mit dem eingravierten Text vor den Spiegel. Was beobachten Sie? Was passiert, wenn Sie das Plexiglas drehen? Geben Sie nun eine Antwort auf die Eingangs gestellte Frage. _Tipp: Zeichnen Sie den Verlauf der Lichtstrahlen von oben gesehen._
     #align(center)[
@@ -256,33 +283,33 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
         content("spiegel.50%", [Hohlspiegel], anchor: "west", padding: 2pt)
       })
     ]
-    
+
   - Erzeugen Sie mit der LaserRayBox 5 parallele Lichtstrahlen und untersuchen Sie den Verlauf dieser Lichtstrahlen vor dem Hohlspiegel. Achten Sie darauf, dass die Lichtstrahlen parallel zur optischen Achse einfallen.
-  
+
   - Haben Sie beobachtet, wie alle parallel einfallenden Lichtstrahlen sich in einem Punkt schneiden? Diesen Punkt nennen Physiker _Brennpunkt_. Den Abstand zwischen Brennpunkt und Spiegel nennen sie folgerichtig _Brennweite_.
 
   - Wie gross ist die Brennweite verglichen mit dem Krümmungsradius des Spiegels? Sie können Ihren Zirkel verwenden, um den Krümmungsradius des Spiegels abzuschätzen.
     #schreibpapier(height: 2.41cm)
-    
+
   - Zeichnen Sie in die obige Abbildung den Brennpunkt ein (schätzen Sie selber ab, wo er in etwa liegen müsste) und beschriften Sie ihn mit einem grossen $F$. Zeichnen Sie zudem 3 Strahlen ein, die parallel zur optischen Achse verlaufen (_achsenparallel_), und deren weiteren Verlauf nach der Reflexion am Spiegel.
-  
+
   - In welche Richtung wird ein Strahl reflektiert, der zuerst durch den Brennpunkt geht (ein so genannter _Brennstrahl_)?
     #schreibpapier(height: 2.41cm)
-    
+
 + Und nun kommen wir zur spannenden Frage:
   Wie sieht das Spiegelbild eines Gegenstandes in einem Hohlspiegel aus?
-  
-  - Halten Sie dafür Ihren Finger vor den grossen Hohlspiegel und beschreiben Sie die Art, die Grösse und die Lage des Bildes in Abhängigkeit vom Abstand Finger-Spiegel. 
+
+  - Halten Sie dafür Ihren Finger vor den grossen Hohlspiegel und beschreiben Sie die Art, die Grösse und die Lage des Bildes in Abhängigkeit vom Abstand Finger-Spiegel.
 
     #align(center)[
       #table(
         columns: (auto, auto, auto),
         align: (left, center, center),
-        
+
         [Abstand Finger–Spiegel], [Art (aufrecht, umgekehrt)], [#h(1cm)Grösse#h(1cm)],
         [sehr nahe am Spiegel#v(.5em)], [], [],
         [im Brennpunkt#v(.5em)], [], [],
-        [sehr weit weg#v(.5em)], [], []
+        [sehr weit weg#v(.5em)], [], [],
       )
     ]
 
@@ -297,7 +324,7 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
       set-style(stroke: .5pt)
 
       line((0, -3), (0, 3), name: "HE")
-      line((-11, 0), (3,0), stroke: (dash: "dash-dotted"), name: "oA")
+      line((-11, 0), (3, 0), stroke: (dash: "dash-dotted"), name: "oA")
       circle((-3, 0), radius: 1pt, fill: black, name: "F")
       line((-9, -1.5), (-9, 2), stroke: 1pt + purple, mark: (end: "barbed"), name: "G")
 
@@ -320,6 +347,6 @@ Eine interessante Frage haben wir noch nicht untersucht: Wie wird das Sonnenlich
     ],
     [
       #image("../bilder/parabolspiegel.jpg", width: 6cm)
-    ]
+    ],
   )
 ]
