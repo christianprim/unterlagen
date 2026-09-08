@@ -339,9 +339,9 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Wir beginnen in Punkt 1. Die anschliessende Expansion verläuft isotherm, d.h. bei konstanter Temperatur $T_h$. Dabei muss Energie (Wärme $Q_h$) von aussen in das System fliessen. Bei dieser Zustandsänderung handelt es sich somit um eine *isotherme Expansion*.
+    Wir beginnen in Punkt 1. Die anschliessende Expansion verläuft isotherm, d.h. bei konstanter Temperatur #text(orange, $T_h$). Dabei muss Energie (Wärme #text(fuchsia, $Q_h$)) von aussen in das System fliessen. Bei dieser Zustandsänderung handelt es sich somit um eine *isotherme Expansion*.
 
-    Von Punkt 2 zu Punkt 3 führt das Gas eine *adiabatische Expansion* aus, d.h. eine Expansion ohne Energiefluss nach aussen oder innen. Diese führt uns zu einer niedrigeren Temperatur $T_n$.
+    Von Punkt 2 zu Punkt 3 führt das Gas eine *adiabatische Expansion* aus, d.h. eine Expansion ohne Energiefluss nach aussen oder innen. Diese führt uns zu einer niedrigeren Temperatur #text(orange, $T_n$).
 
   ],
   [
@@ -349,49 +349,64 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
       cetz.canvas({
         import cetz.draw: *
         import cetz-plot: *
+        import cetz.decorations
 
         // Grundlegende Styles festlegen
         set-style(
-          text: (size: 8pt),
-          stroke: (thickness: 0.8pt),
+          axes: (
+            overshoot: 5pt, 
+            shared-zero: false, 
+            stroke: 0.5pt, 
+            tick: (
+              stroke: 0.5pt
+            ), 
+            x: (
+              mark: (
+                end: "barbed", 
+                scale: 0.7
+              )
+            ), 
+            y: (
+              mark: (
+                end: "barbed", 
+                scale: 0.7
+              )
+            )
+          ), 
+          stroke: 0.5pt
         )
 
-        // System-Parameter (Physikalische Konstanten für das Modell)
         let C-h = 6.0 // Konstante für warme Isotherme T_h (p * V = C_h)
         let C-n = 2.5 // Konstante für kalte Isotherme T_n (p * V = C_n)
-        let kappa = 1.4 // Adiabatenkoeffizient
+        let kappa = 2.6 // Adiabatenkoeffizient
 
-        // V-Koordinaten der Zustandspunkte
         let v1 = 1.2
         let v2 = 2.8
-        let v4 = 2.0
-        // v3 berechnet sich aus der Kreisprozess-Bedingung: v3 = v2 * v4 / v1
+        let v4 = 2.1
         let v3 = (v2 * v4) / v1
 
-        // Druckwerte an den 4 Punkten
         let p1 = C-h / v1
         let p2 = C-h / v2
         let p4 = C-n / v4
         let p3 = C-n / v3
 
         plot.plot(
-          size: (7, 6),
+          size: (7, 4.5),
           x-min: 0,
-          x-max: 4.5,
+          x-max: 5,
           y-min: 0,
           y-max: 5.5,
           x-label: [$V$],
-          y-label: [$p$],
+          y-label: text(blue)[$p$],
           axis-style: "school-book",
           x-tick-step: none,
           y-tick-step: none,
+          name: "p-V",
           {
-            // 1. Graue Fläche (Arbeit W) schraffieren/ausfüllen
             plot.add-fill-between(
-              domain: (v1, v2),
+              domain: (v1, v3),
               x => C-h / x,
               x => {
-                // Untere Begrenzung der Fläche aus Adiabate (4->1) und Isotherme (4->3)
                 let c-ad1 = p1 * calc.pow(v1, kappa)
                 let p-ad1 = c-ad1 / calc.pow(x, kappa)
                 let p-iso2 = C-n / x
@@ -400,96 +415,96 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
               style: (fill: rgb("e0e0e0"), stroke: none),
             )
 
-            // 2. Isotherme T_h (Obere Kurve)
-            plot.add(
-              domain: (0.8, 4.2),
+            plot.add-fill-between(
+              domain: (v2, v3),
               x => C-h / x,
-              style: (stroke: (paint: red, thickness: 1pt)),
-              label: none,
+              x => {
+                let c-ad1 = p2 * calc.pow(v2, kappa)
+                let p-ad1 = c-ad1 / calc.pow(x, kappa)
+                let p-iso2 = C-n / x
+                calc.max(p-ad1, p-iso2)
+              },
+              style: (fill: white, stroke: none),
             )
 
-            // 3. Isotherme T_n (Untere Kurve)
             plot.add(
-              domain: (0.5, 4.2),
-              x => C-n / x,
-              style: (stroke: (paint: red, thickness: 1pt)),
+              domain: (0.8, 5.2),
+              x => C-h / x,
+              style: (stroke: (paint: orange, thickness: 1pt)),
               label: none,
             )
 
-            // 4. Prozesskurven mit Pfeilen zeichnen (1->2, 2->3, 3->4, 4->1)
-            // Isotherme Expansion 1 -> 2
+            plot.add(
+              domain: (0.5, 5.2),
+              x => C-n / x,
+              style: (stroke: (paint: orange, thickness: 1pt)),
+              label: none,
+            )
+
             plot.add(
               domain: (v1, v2),
               x => C-h / x,
-              style: (stroke: (paint: red, thickness: 1.5pt), mark: (end: "stealth", fill: red)),
+              style: (stroke: (paint: red, thickness: 1pt), mark: (end: "barbed", fill: red)),
             )
 
-            // Adiabate Expansion 2 -> 3
             let c-ad23 = p2 * calc.pow(v2, kappa)
             plot.add(
               domain: (v2, v3),
               x => c-ad23 / calc.pow(x, kappa),
-              style: (stroke: (paint: red, thickness: 1.5pt), mark: (end: "stealth", fill: red)),
+              style: (stroke: (paint: red, thickness: 1pt), mark: (end: "barbed", fill: red)),
             )
 
-            // Isotherme Kompression 3 -> 4
             plot.add(
               domain: (v4, v3),
               x => C-n / x,
-              style: (stroke: (paint: red, thickness: 1.5pt), mark: (start: "stealth", fill: red)),
+              style: (stroke: (paint: red, thickness: 1pt), mark: (start: "barbed", fill: red)),
             )
 
-            // Adiabate Kompression 4 -> 1
             let c-ad41 = p4 * calc.pow(v4, kappa)
             plot.add(
               domain: (v1, v4),
               x => c-ad41 / calc.pow(x, kappa),
-              style: (stroke: (paint: red, thickness: 1.5pt), mark: (start: "stealth", fill: red)),
+              style: (stroke: (paint: red, thickness: 1pt), mark: (start: "barbed", fill: red)),
             )
+
+            plot.add-anchor("1", (v1, p1))
+            plot.add-anchor("2", (v2, p2))
+            plot.add-anchor("3", (v3, p3))
+            plot.add-anchor("4", (v4, p4))
           },
         )
 
-        // -- Beschriftungen & Hilfslinien außerhalb des Plots platzieren --
-        // Hinweis: Koordinaten lassen sich im Plot direkt mit den berechneten Variablen annotieren.
+        content((3.3, 1.5), [$W$])
 
-        // Text "W" in der Mitte
-        content((3.2, 2.3), [$W$])
+        content((1.4, 5.6*.75), text(orange)[$T_h$])
+        content((0.5, 5*.75), text(orange)[$T_n$])
 
-        // Isothermen-Namen
-        content((1.2, 5.2), [$T_h$])
-        content((0.7, 4.8), [$T_n$])
+        content("p-V.1", [$1$], anchor: "west", padding: 3pt)
+        content("p-V.2", [$2$], anchor: "south-west", padding: 2pt)
+        content("p-V.3", [$3$], anchor: "south", padding: 2pt)
+        content("p-V.4", [$4$], anchor: "north", padding: 2pt)
 
-        // Punkte 1-4 beschriften
-        circle((1.9, 4.5), radius: 0.05, fill: red, stroke: none)
-        content((1.9, 4.7), [$1$])
+        content((3.7, 3.4*.75), text(fuchsia)[$+ Q_h$])
+        decorations.wave(line((3.2, 3.3*.75), (2.8, 2.8*.75)), amplitude: 1pt, stroke: (paint: fuchsia, thickness: .5pt))
+        mark((2.7, 2.68*.75), (rel: (-.4, -.5*.75)), symbol: "barbed", stroke: fuchsia)
+        decorations.wave(line((3.5, 3.0*.75), (3.1, 2.5*.75)), amplitude: 1pt, stroke: (paint: fuchsia, thickness: .5pt))
+        mark((3, 2.38*.75), (rel: (-.4, -.5*.75)), stroke: fuchsia, symbol: "barbed")
 
-        circle((3.9, 2.1), radius: 0.05, fill: red, stroke: none)
-        content((4.1, 2.2), [$2$])
-
-        circle((4.8, 1.3), radius: 0.05, fill: red, stroke: none)
-        content((5.0, 1.4), [$3$])
-
-        circle((3.0, 1.6), radius: 0.05, fill: red, stroke: none)
-        content((2.9, 1.4), [$4$])
-
-        // Wärmepfeile (+Q_h und -Q_n)
-        content((4.3, 3.4), [$+ Q_h$])
-        line((3.5, 3.2), (3.0, 2.7), stroke: (paint: red, thickness: 0.8pt), mark: (end: "stealth", fill: red))
-        line((3.9, 3.0), (3.4, 2.5), stroke: (paint: red, thickness: 0.8pt), mark: (end: "stealth", fill: red))
-
-        content((3.8, 0.7), [$- Q_n$])
-        line((3.8, 1.4), (3.9, 0.9), stroke: (paint: red, thickness: 0.8pt), mark: (end: "stealth", fill: red))
-        line((4.2, 1.2), (4.3, 0.7), stroke: (paint: red, thickness: 0.8pt), mark: (end: "stealth", fill: red))
+        content((3.6, 0.3*.75), text(fuchsia)[$- Q_n$])
+        decorations.wave(line((4, 1.3*.75), (3.6, .8*.75)), amplitude: 1pt, stroke: (paint: fuchsia, thickness: .5pt))
+        mark((3.5, .68*.75), (rel: (-.4, -.5*.75)), symbol: "barbed", stroke: fuchsia)
+        decorations.wave(line((4.4, 1.2*.75), (4, .7*.75)), amplitude: 1pt, stroke: (paint: fuchsia, thickness: .5pt))
+        mark((3.9, .58*.75), (rel: (-.4, -.5*.75)), stroke: fuchsia, symbol: "barbed")
       }),
     )
   ],
 )
 
-Nun folgt eine *isotherme Kompression*. Weil diese bei einer niedrigeren Temperatur erfolgt als die vorhergehende isotherme Expansion, braucht sie weniger Energie $Q_n$, als die Expansion an Energie $Q_h$ lieferte. Diese Zustandsänderung führt uns von Punkt 3 zu Punkt 4.
+Nun folgt eine *isotherme Kompression*. Weil diese bei einer niedrigeren Temperatur erfolgt als die vorhergehende isotherme Expansion, braucht sie weniger Energie #text(fuchsia, $Q_n$), als die Expansion an Energie #text(fuchsia, $Q_h$) lieferte. Diese Zustandsänderung führt uns von Punkt 3 zu Punkt 4.
 
 Nun folgt eine *adiabatische Kompression*, die uns in den Ausgangszustand 1 zurück führt.
 
-Der Umgebung wird dabei Energie $Delta Q = Q_h – Q_n$ entzogen, die die Maschine in Arbeit $W$ umwandelt. Das Gas braucht Wärme aus einem Wärmereservoir der Temperatur $T_h$ und gibt Wärme an ein kälteres Wärmereservoir $T_n$ ab. Bei der Dampfmaschine, die #smallcaps[Carnot] damals verbessern wollte, handelte es sich bei den Wärmereservoirs um den Dampf im Dampfkessel und um die Kühlung auf der Dampfauslassseite, dem Kondensator.
+Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h$] – #text(fuchsia)[$Q_n$]$ entzogen, die die Maschine in Arbeit $W$ umwandelt. Das Gas braucht Wärme aus einem Wärmereservoir der Temperatur #text(orange, $T_h$) und gibt Wärme an ein kälteres Wärmereservoir #text(orange, $T_n$) ab. Bei der Dampfmaschine, die #smallcaps[Carnot] damals verbessern wollte, handelte es sich bei den Wärmereservoirs um den Dampf im Dampfkessel und um die Kühlung auf der Dampfauslassseite, dem Kondensator.
 
 == Frage
 
