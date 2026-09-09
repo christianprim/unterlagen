@@ -334,7 +334,7 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
   ],
 )
 
-#smallcaps[Carnot] fand vier Zustandsänderungen, die einen solchen Kreisprozess ergeben. Diesen Kreisprozess für einen idealen thermischen Energiewandler nennen wir Carnot’scher Kreisprozess. Dieser ist in Abbildung 4 dargestellt.
+#smallcaps[Carnot] fand vier Zustandsänderungen, die einen solchen Kreisprozess ergeben. Diesen Kreisprozess für einen idealen thermischen Energiewandler nennen wir #smallcaps[Carnot]'scher Kreisprozess. Dieser ist in Abbildung 4 dargestellt.
 #grid(
   columns: (1fr, auto),
   gutter: .5cm,
@@ -412,7 +412,7 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
                 let p-iso2 = C-n / x
                 calc.max(p-ad1, p-iso2)
               },
-              style: (fill: rgb("e0e0e0"), stroke: none),
+              style: (fill: haupt-farbe.lighten(80%), stroke: none),
             )
 
             plot.add-fill-between(
@@ -496,13 +496,14 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
         decorations.wave(line((4.4, 1.2*.75), (4, .7*.75)), amplitude: 1pt, stroke: (paint: fuchsia, thickness: .5pt))
         mark((3.9, .58*.75), (rel: (-.4, -.5*.75)), stroke: fuchsia, symbol: "barbed")
       }),
+      caption: [#smallcaps[Carnot]'scher Kreisisprozess]
     )
   ],
 )
 
 Nun folgt eine *isotherme Kompression*. Weil diese bei einer niedrigeren Temperatur erfolgt als die vorhergehende isotherme Expansion, braucht sie weniger Energie #text(fuchsia, $Q_n$), als die Expansion an Energie #text(fuchsia, $Q_h$) lieferte. Diese Zustandsänderung führt uns von Punkt 3 zu Punkt 4.
 
-Nun folgt eine *adiabatische Kompression*, die uns in den Ausgangszustand 1 zurück führt.
+Es folgt eine *adiabatische Kompression*, die uns in den Ausgangszustand 1 zurück führt.
 
 Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h$] – #text(fuchsia)[$Q_n$]$ entzogen, die die Maschine in Arbeit $W$ umwandelt. Das Gas braucht Wärme aus einem Wärmereservoir der Temperatur #text(orange, $T_h$) und gibt Wärme an ein kälteres Wärmereservoir #text(orange, $T_n$) ab. Bei der Dampfmaschine, die #smallcaps[Carnot] damals verbessern wollte, handelte es sich bei den Wärmereservoirs um den Dampf im Dampfkessel und um die Kühlung auf der Dampfauslassseite, dem Kondensator.
 
@@ -511,4 +512,194 @@ Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h
 Weshalb ist die adiabatische Expansion im #smallcaps[Carnot]’schen Kreisprozess nötig?
 
 #schreibpapier()
+#pagebreak()
+
+= Benzinmotoren
+
+#lernziele[
+  An diesem Posten erfahren Sie
+  - wie die in unserer Zeit am weitest verbreitete Motorenart funktioniert.
+  - was die Vor- und Nachteile der Benzin-Motoren sind.
+]
+
+== Ablauf
+
+#grid(
+  columns: (1fr, auto),
+  gutter: .5cm,
+  [
+    Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Das Demonstrations-Modell dient zur Veranschaulichung der Erklärungen im folgenden Text. Benötigte Zeit: 20 Minuten.
+
+    == Funktionsweise der Benzin-Motoren
+
+    Bei den Benzin-Motoren unterscheidet man zwischen dem 2-Takt- und dem 4-Takt-Motor, welcher auch #smallcaps[Otto]-Motor genannt wird.
+
+    N. #smallcaps[Otto] stellte seinen Verbrennungsmotor #text(number-type: "old-style")[1867 vor. 1883] wurde er von den Herren #smallcaps[Daimler] und #smallcaps[Benz] weiterentwickelt. Heute erreicht dieser Motor Wirkungsgrade von maximal 35%. Die Funktionsweise kann in vier Takte unterteilt werden. Drehen Sie das Modell (s. nebenstehende Abbildung) in die richtige Position, die dem Takt entspricht, an welchem Sie gerade am Lesen sind. Die folgende Abbildung veranschaulicht das im Text Beschriebene.
+
+  ],
+  [
+    #image("../bilder/viertaktmotor.png", width: 4cm)
+  ]
+)
+
+=== a) Der 4-Takt- oder Otto-Motor
+
+#figure(
+  image("../bilder/4takt.png", width: 16cm)
+)
+
+1\. Takt: Der Kolben ist oben und beginnt sich nach unten zu bewegen. In diesem Moment öffnet das Einlassventil und das Treibstoff-Luft-Gemisch wird in den Zylinder gesogen.
+
+2\. Takt: Nachdem der Kolben die unterste Position erreicht hat, schliesst das Einlassventil. Der Kolben bewegt sich nach oben und verdichtet das Gemisch. Das Volumen wird auf etwa einen Zehntel verkleinert, wodurch der Druck auf etwas mehr als #qty("22", "bar") ansteigt. Man spricht von einem Verdichtungsverhältnis von 10:1. Das Gemisch erreicht dabei etwa eine Temperatur von #qty("300", "Celsius") bis #qty("400", "Celsius"). Bei Temperaturen über #qty("500", "Celsius") würde sich das Benzin-Luft-Gemisch selbständig entzünden, was den Motor beschädigen kann (führt zu sogenanntem Klopfen).
+
+#text(size: 8pt)[Bei Benzinsorten unterscheidet man unterschiedliche Oktan-Zahlen. Je höher die Oktan-Zahl des Benzins, umso höher liegt die Temperatur, bei welcher sich das Benzin-Luft-Gemisch selbständig entzündet. Das heisst, dass Motoren mit höherem Verdichtungsverhältnis Benzin-Sorten mit grösserer Oktan-Zahl benötigen (Bsp.: Bleifrei 95 hat die Oktan-Zahl 95, Bleifrei 98 eine entsprechend höhere).]
+
+3\. Takt: Ein Funken der Zündkerze entzündet das Gemisch, die Temperatur steigt auf über #qty("2500", "Celsius") und dadurch erhöht sich der Druck auf etwa #qty("60", "bar"). Der Kolben wird nach unten gedrückt (Arbeitstakt).
+
+4\. Takt: In dem Moment, in welchem sich der Kolben wieder nach oben bewegt, öffnet das Auslassventil und die Abgase werden nach aussen gedrückt. Ist der Kolben oben angelangt, so schliesst das Auslassventil und der Ablauf beginnt wieder mit dem 1. Takt.
+
+Bei genauer Betrachtung der Funktionsweise des 4-Takt-Motors erkennt man, dass auf zwei Auf- und Abbewegungen nur ein Arbeitstakt stattfindet. Zudem ist der 4-Takt-Motor auf Ventile angewiesen, die Störungen hervorrufen können. Der folgende Motor hat diese Nachteile nicht.
+
+=== b) Der 2-Takt-Motor
+
+Die Funktionsweise kann in zwei Takte unterteilt werden:
+
+#grid(
+  columns: (1fr, auto),
+  gutter: .5cm,
+  [
+    1\. Takt: Der sich nach oben bewegende Kolben (s. Abb. a rechts) komprimiert das über ihm befindliche Gemisch. Gleichzeitig wird neues Gemisch durch den nun offenen Gaseinlass in das Kurbelgehäuse gesogen.
+  ],
+  [
+    #image("../bilder/2takt.png", width: 9cm)
+  ]
+)
+
+
+2\. Takt: Das komprimierte Gemisch wird entzündet (s. Abb. b unten in der Mitte). Der entstehende grosse Druck presst den Kolben nach unten (Arbeitstakt). Das Gemisch im Kurbelgehäuse wird dadurch etwas zusammengepresst, kann aber nicht mehr zum Gaseinlass heraus, da dieser vom Kolben bald versperrt wird. Sobald der Kolben in der untersten Position ist, wird das Gemisch im Kurbelgehäuse durch den Überströmkanal in den Brennraum über den Kolben geleitet (s. Abb. c unten rechts). Gleichzeitig wird das verbrannte Gemisch durch das neu eintretende Gemisch zum Gasaustritt hinaus gedrückt. Aufgrund der etwas speziellen Formgebung des Kolbenoberteils tritt nur wenig frisches Gemisch direkt wieder zum Gasaustritt aus, allerdings lässt sich das bei Zwei-Taktern nicht verhindern, was man an den Abgasen riechen kann. Einspritz-Zweitakter haben diese Durchmischung zwar nicht, doch liessen sie sich nicht mit einem Dreiwegkatalysator betreiben bzw. haben eine geringere Leistung. Nun wird wieder beim 1. Takt begonnen.
+
+== Fragen
+
+- Was sind die Vor- und Nachteile der beiden Motorenarten im Vergleich? Welcher ist leistungsfähiger, welcher ist billiger in der Herstellung, bei welchem können die Abgase geringer gehalten werden, etc. Begründen Sie Ihre Antworten. Suchen Sie nach weiteren Vor- und Nachteilen.
+- Liegt der Wirkungsgrad des 2-Takt-Motors eher über oder unter demjenigen des #smallcaps[Otto]-Motors?
+- Beantworten Sie diese Frage, falls Sie den Posten 5 (Dieselmotor) bereits absolviert haben. Der #smallcaps[Otto]-Motor hat einige Ähnlichkeiten mit dem Diesel-Motor. Vergleichen Sie die beiden Motoren miteinander und stellen Sie Gemeinsamkeiten und Unterschiede zusammen. Was sind Vor- und Nachteile des einen gegenüber dem andern?
+
+#schreibpapier()
+#pagebreak()
+
+= Dieselmotor
+
+#lernziele[
+  An diesem Posten erfahren Sie
+  - wie der in unserer Zeit am zweithäufigsten verbreitete Motor funktioniert.
+  - wie die Motorenleistung aus dem $p$-$V$-Diagramm bestimmt werden kann.
+]
+
+== Ablauf
+
+Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Das Demonstrations-Modell dient zur Veranschaulichung der Erklärungen im folgenden Text. Für diesen Posten benötigen Sie 20 Minuten. Erledigen Sie Aufgaben, die die angegebene Zeit überschreiten, zu Hause.
+
+#grid(
+  columns: (1fr, auto),
+  gutter: .5cm,
+  [
+    == Funktionsweise des Dieselmotors
+
+    In den Jahren zwischen #text(number-type: "old-style")[1892 und 1897] entwickelte R. #smallcaps[Diesel] den nach ihm benannten Verbrennungsmotor, der lange in Autos anteilsmässig hinter dem #smallcaps[Otto]-Motor zurückstand, aber gerade in letzter Zeit stark aufholt und in Lastwagen gar ausschliesslich zum Einsatz kommt. Die untenstehende Abbildung veranschaulicht das im Text beschriebene. In einem Druck-Volumen-Diagramm ($p$-$V$-Diagramm, s. nächste Seite) werden wir das Gas, welches sich im Zylinder befindet, während den 4-Takten "begleiten":
+
+    1\. Takt: Der Kolben ist oben und beginnt sich nach unten zu bewegen. In diesem Moment öffnet das Einlassventil und reine Luft wird in den Zylinder gesogen.
+  ],
+  [
+    #image("../bilder/dieselmotor.png", width: 5cm)
+  ]
+)
+
+2\. Takt: Nachdem der Kolben die unterste Position erreicht hat, schliesst das Einlassventil. Der Kolben bewegt sich nach oben und verdichtet die Luft. Das Volumen wird auf etwa einen Sechszehntel verkleinert, wodurch der Druck auf etwas mehr als #qty("45", "bar") ansteigt (ohne Abgasturboaufladung, s. Posten 8). Man spricht von einem Verdichtungsverhältnis von 16:1. Das Gemisch erreicht dabei eine Temperatur von etwa #qty("600", "Celsius"). Hat der Kolben den höchsten Punkt erreicht, so sprüht eine Hochdruckpumpe den flüssigen Diesel-Treibstoff in den Zylinder. Der Treibstoff entzündet sich aufgrund der hohen Temperatur selbständig (Zündkerzen braucht der Dieselmotor somit keine).
+
+#figure(
+  image("../bilder/diesel-4takt.jpg")
+)
+3\. Takt: Durch die Entzündung des Gemischs steigt die Temperatur an, und damit steigt auch der Druck auf etwa #qty("60", "bar"). Der Kolben wird nach unten gedrückt (Arbeitstakt).
+
+4\. Takt: In dem  Moment, in welchem sich der Kolben wieder nach oben bewegt, öffnet das Auslassventil und die Abgase werden nach aussen gedrückt. Ist der Kolben oben angelangt, so schliesst das Auslassventil und der Ablauf beginnt wieder mit dem 1. Takt.
+
+Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit einem Wirkungsgrad von 38% und mehr. Grosse Schiffsdieselmotoren erreichen Wirkungsgrade von bis zu 50%.
+
+
+== Fragen
+
+- Beantworten Sie diese Frage, falls Sie den Posten 4 (Benzin-Motoren) bereits absolviert haben. Der Diesel-Motor hat einige Ähnlichkeiten mit dem Otto-Motor. Vergleichen Sie die beiden Motoren miteinander und stellen Sie Gemeinsamkeiten und Unterschiede zusammen. Was sind Vor- und Nachteile des einen gegenüber dem andern?
+- Aus Posten 3 wissen Sie, dass die Fläche unter einer Kurve in einem $p$-$V$-Diagramm die Arbeit ergibt. Das heisst für das $p$-$V$-Diagramm des Dieselmotors, dass die eingeschlossene Fläche die Arbeit angibt, die der Kolben während den vier Takten verrichtet.
+  
+  #grid(
+    columns: (1fr, auto),
+    gutter: .5cm,
+    [
+        - Bestimmen Sie die Arbeit $W$ (in J), die in einer rechteckigen Fläche des Gitternatzes in der Abbildung "steckt", indem Sie die Seitenlängen des Rechtecks bestimmen ($p$, $V$) und daraus die Arbeit $W$ als Produkt der beiden Grössen berechnen.
+
+        - Schätzen Sie dann die Arbeit, die der Kolben während den vier Takten verrichtet, indem Sie die von der Kurve eingeschlossenen Fläche anhand des Gitters von Auge abschätzen.
+
+        - Wie gross ist die Leistung eines 4-Zylinder-Motors, der mit 4200 Umdrehungen pro Minute arbeitet und das in der Abbildung dargestellte $p$-$V$-Diagramm aufweist? Wie gross ist das Hubvolumen (auch Hubraum genannt) dieses Motors?
+    ],
+    [
+      #align(horizon)[
+        #cetz.canvas({
+          import cetz-plot: *
+          import cetz.draw: *
+          
+          set-style(
+            axes: (
+              overshoot: 15pt, 
+              shared-zero: true, 
+              stroke: 0.5pt, 
+              tick: (stroke: 0.5pt), 
+              x: (mark: (end: "barbed", scale: 0.7)), 
+              y: (mark: (end: "barbed", scale: 1))
+            ), 
+            stroke: 0.5pt
+          )
+
+          plot.plot(
+            axis-style: "school-book", 
+            size: (5,5), 
+            x-tick-step: 50, 
+            y-tick-step: 10, 
+            x-label: [~~~~~~~~~~$V$ in $unit("cm^3")$], 
+            y-label: [#text(fill: blue)[$p$] in bar], 
+            x-grid: true, 
+            y-grid: true, 
+            x-min: 0, 
+            x-max: 350, 
+            y-min: 0, 
+            name: "pV", 
+            {
+              plot.add(
+                (
+                  (300, 1), 
+                  (120, 18),
+                  (70, 30),
+                  (40, 57),
+                  (70, 58),
+                  (150, 32),
+                  (270, 12),
+                  (294, 3),
+                  (150, 1.8),
+                  (40, 1.5),
+                  (300, 1)
+                ), 
+                style: (stroke: haupt-farbe), 
+                line: (type: "spline", tension: .5)
+              )
+            }
+          ) 
+        })
+      ]
+    ]
+  )
+
+
+  _Bem.: Die kleine Schleife unten, die vom Gaswechsel in Takt 1 und 4 herrührt, schliesst ebenfalls eine bestimmte Fläche ein, die auch eine Arbeit darstellt. Diese Arbeit muss aber aufgewendet werden und müsste deshalb genau genommen von der verrichteten Arbeit abgezogen werden!_
+
+#schreibpapier()
+#pagebreak()
 
