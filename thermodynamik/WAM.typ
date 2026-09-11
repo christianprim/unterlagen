@@ -33,18 +33,18 @@ Folgende Posten stehen zur Verfügung:
   columns: 4,
   align: (left, right, left, left),
   gutter: 1em,
-  [☞], [1\. Posten:], [Der Weg zur Dampfmaschine des James Watt], [20 min],
-  [☞], [2\. Posten:], [Erfindung eines Geistlichen: Der Stirling-Motor], [15 min],
-  [☞], [3\. Posten:], [Der Carnot-Prozess], [20 min],
-  [☞], [4\. Posten:], [Benzinmotoren: Im 4-Takt und 2-Takt], [20 min],
-  [☞], [5\. Posten:], [Der Dieselmotor: Im Kampf gegen den Benziner], [20 min],
-  [☞], [6\. Posten:], [Der Wankelmotor: Eine Nachkriegserfindung], [15 min],
-  [☞], [7\. Posten:], [Rund ums Auto], [15 min],
-  [☞], [8\. Posten:], [Kompressoren und Turbolader], [10 min],
-  [☞], [9\. Posten:], [Vom Eismann zum Kühlschrank], [25 min],
-  [☞], [10\. Posten:], [Die Dampfturbine: Einfaches Prinzip hoch aktuell], [10 min],
-  [☞], [11\. Posten:], [Der Raketen-Antrieb: Primitiv und trotzdem leistungsfähig], [20 min],
-  [☞], [12\. Posten:], [Das Düsentriebwerk, eine fliegende Wärmearbeitsmaschine], [10 min],
+  [☞], link(<1>)[1\. Posten:], link(<1>)[Der Weg zur Dampfmaschine des James Watt], [20 min],
+  [☞], link(<2>)[2\. Posten:], link(<2>)[Erfindung eines Geistlichen: Der Stirling-Motor], [15 min],
+  [☞], link(<3>)[3\. Posten:], link(<3>)[Der Carnot-Prozess], [20 min],
+  [☞], link(<4>)[4\. Posten:], link(<4>)[Benzinmotoren: Im 4-Takt und 2-Takt], [20 min],
+  [☞], link(<5>)[5\. Posten:], link(<5>)[Der Dieselmotor: Im Kampf gegen den Benziner], [20 min],
+  [☞], link(<6>)[6\. Posten:], link(<6>)[Der Wankelmotor: Eine Nachkriegserfindung], [15 min],
+  [☞], link(<7>)[7\. Posten:], link(<7>)[Rund ums Auto], [15 min],
+  [☞], link(<8>)[8\. Posten:], link(<8>)[Kompressoren und Turbolader], [10 min],
+  [☞], link(<9>)[9\. Posten:], link(<9>)[Vom Eismann zum Kühlschrank], [25 min],
+  [☞], link(<10>)[10\. Posten:], link(<10>)[Die Dampfturbine: Einfaches Prinzip hoch aktuell], [10 min],
+  [☞], link(<11>)[11\. Posten:], link(<11>)[Der Raketen-Antrieb: Primitiv und trotzdem leistungsfähig], [20 min],
+  [☞], link(<12>)[12\. Posten:], link(<12>)[Das Düsentriebwerk, eine fliegende Wärmearbeitsmaschine], [10 min],
 )
 
 #set heading(numbering: "1.")
@@ -60,7 +60,7 @@ Folgende Posten stehen zur Verfügung:
 }
 #pagebreak()
 
-= Dampfmaschine
+= Dampfmaschine <1>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -127,7 +127,11 @@ Der griechische Gelehrte #smallcaps[Heron] von Alexandria, der im ersten Jahrhun
   ],
 )
 Anzumerken ist noch, dass durch den Steuerkolben jeweils in dem Moment, in welchem z.B. rechts die Dampfzufuhr geöffnet wird, links ein Kanal öffnet, durch den der sich noch im linken Teil befindliche Dampf nach aussen entweichen kann. Dieser Kanal ist im Modell oben als "U-förmige" Aussparung zu erkennen.
-Die Drehzahl kann mit einem Fliehkraftregler, wie sie ihn bei den Kreisbewegungen kennengelernt haben, durch Regulieren der Dampfzufuhr konstant gehalten werden.
+
+#text(
+  size: 8pt,
+)[Die Drehzahl kann mit einem Fliehkraftregler, wie sie ihn bei den Kreisbewegungen kennengelernt haben, durch Regulieren der Dampfzufuhr konstant gehalten werden.]
+
 Die Dampfmaschine nach diesem Prinzip erreicht einen Wirkungsgrad von bis zu 25%.
 
 == Frage
@@ -136,7 +140,7 @@ Die Dampfmaschine nach diesem Prinzip erreicht einen Wirkungsgrad von bis zu 25%
 #schreibpapier()
 #pagebreak()
 
-= Stirlingmotor
+= Stirlingmotor <2>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -201,7 +205,7 @@ Stirling-Motoren haben leider bisher nie den grossen Durchbruch erlangt, obwohl 
 #schreibpapier()
 #pagebreak()
 
-= Carnot-Prozess
+= Carnot-Prozess <3>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -526,7 +530,7 @@ Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h
 #schreibpapier()
 #pagebreak()
 
-= Benzinmotoren
+= Benzinmotoren <4>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -600,7 +604,7 @@ Die Funktionsweise kann in zwei Takte unterteilt werden:
 #schreibpapier()
 #pagebreak()
 
-= Dieselmotor
+= Dieselmotor <5>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -718,7 +722,7 @@ Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit ein
 #schreibpapier()
 #pagebreak()
 
-= Wankelmotor
+= Wankelmotor <6>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -766,7 +770,7 @@ Ein Java-Applet zum Ablauf der einzelnen Phasen finden Sie im Internet unter: ht
 
 #pagebreak()
 
-= Rund ums Auto
+= Rund ums Auto <7>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -802,7 +806,7 @@ Die Kraft des Motors wird über ein *Getriebe* auf die Räder gelenkt. Mit der *
 
 #pagebreak()
 
-= Kompressoren
+= Kompressoren <8>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -844,7 +848,7 @@ Früher waren Kompressoren und Turbolader ein Zeichen für Sportlichkeit. Weil d
 #schreibpapier()
 #pagebreak()
 
-= Kühlschrank
+= Kühlschrank <9>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -903,7 +907,7 @@ Falls Sie einmal auch ohne Kühlschrank Glace herstellen wollen, dann können Si
 #schreibpapier()
 #pagebreak()
 
-= Dampfturbine
+= Dampfturbine <10>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -948,12 +952,12 @@ Mittlerweile hat sich die Dampfmaschine als Arbeitsmaschine verabschiedet. In gr
 - Welcher Kraftwerkstyp erzeugt elektrische Energie mit einem besseren Wirkungsgrad: Wasserkraftwerke oder Kohlekraftwerke? Wie gross sind diese etwa?
 
 #schreibpapier(height: 6cm)
-- Die Kernkraftwerke Beznau I und II und Mühleberg besitzen keine Kühltürme. Weshalb?
+- Die Kernkraftwerke Beznau I und II besitzen keine Kühltürme. Weshalb?
 
 #schreibpapier()
 #pagebreak()
 
-= Raketen
+= Raketen <11>
 
 #lernziele[
   An diesem Posten erfahren Sie
@@ -1137,7 +1141,7 @@ Lösen Sie diese Gleichung nun nach dem Wirkungsgrad $eta$ auf:#h(1fr)
 #schreibpapier()
 #pagebreak()
 
-= Düsentriebwerk
+= Düsentriebwerk <12>
 
 #lernziele[
   An diesem Posten erfahren Sie
