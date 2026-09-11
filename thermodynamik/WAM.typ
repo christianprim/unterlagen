@@ -900,7 +900,7 @@ Dadurch erwärmt sich das Kältemittel auf #qty("2", "Celsius"), wobei es verdam
 
 Falls Sie einmal auch ohne Kühlschrank Glace herstellen wollen, dann können Sie dies wie folgt tun: Nehmen Sie zwei Schüsseln, eine grössere und eine kleinere, wobei die kleinere gut in die grössere hineingestellt werden kann. Füllen Sie die grössere Schüssel mit viel zerstossenem Eis und wenig Wasser, damit #qty("0", "Celsius") kaltes Eiswasser entsteht. Geben Sie pro Kilogramm Eiswasser #qty("30", "g") bis #qty("50", "g") Kochsalz dazu und mischen Sie gut. Nun können Sie in die kleine Schüssel Ihre vorbereitete Glacemischung geben. Rühren Sie regelmässig, bis diese gefroren ist. Der Grund, dass die Glacemischung fest wird, liegt daran, dass Salzwasser bis einige Grade unter #qty("0", "Celsius") flüssig bleibt. Das Auflösen des Salzes braucht Energie, welche dem Eiswasser entzogen wird und dieses dadurch abkühlt.
 
-== Fragen
+== Frage
 
 - Weshalb ändert der Siedepunkt der Flüssigkeit im Kältemittelkreislauf bei unterschiedlichem Druck?
 
