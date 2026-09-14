@@ -23,7 +23,7 @@ Das Gegenteil hingegen, das Umwandeln von Wärme in Arbeit, ist wesentlich schwi
 _Der Druck eines Gases versetzt ein Bauteil in Bewegung. Diese Bewegung ist meist periodisch, muss es aber nicht sein!_
 
 
-= Was werden Sie tun?
+= Was Sie tun werden?
 
 In dieser Werkstatt werden Sie selbständig in Gruppen zu 2 bis 3 Personen die verschiedenen Wärmearbeitsmaschinen kennen lernen. Zum Teil werden Sie auch Experimente ausführen oder Modelle ausprobieren können. Ich bitte Sie dabei um Sorgfalt im Umgang mit dem Material. Sie bekommen zu jedem Posten Unterlagen, mit welchen Sie arbeiten sollen. Neben Informationen, Theorie und Experimenten zu den jeweiligen Posten werden Sie auch Aufgaben zu bearbeiten haben. Beachten Sie die Zeitvorgaben für die einzelnen Posten. Die Posten können in beliebiger Reihenfolge absolviert werden. Allerdings können gewisse Fragen eines bestimmten Postens unter Umständen erst nach Absolvieren eines anderen Postens beantwortet werden.
 
@@ -33,7 +33,7 @@ Folgende Posten stehen zur Verfügung:
   columns: 4,
   align: (left, right, left, left),
   gutter: 1em,
-  [☞], link(<1>)[1\. Posten:], link(<1>)[Der Weg zur Dampfmaschine des James Watt], [20 min],
+  [☞], link(<1>)[1\. Posten:], link(<1>)[Der Weg zur Dampfmaschine des James #smallcaps[Watt]], [20 min],
   [☞], link(<2>)[2\. Posten:], link(<2>)[Erfindung eines Geistlichen: Der Stirling-Motor], [15 min],
   [☞], link(<3>)[3\. Posten:], link(<3>)[Der Carnot-Prozess], [20 min],
   [☞], link(<4>)[4\. Posten:], link(<4>)[Benzinmotoren: Im 4-Takt und 2-Takt], [20 min],
@@ -64,7 +64,7 @@ Folgende Posten stehen zur Verfügung:
 
 #lernziele[
   An diesem Posten erfahren Sie
-  - was für Ideen von Wärmearbeitsmaschinen die Menschheit schon vor James Watt hatte.
+  - was für Ideen von Wärmearbeitsmaschinen die Menschheit schon vor James #smallcaps[Watt] hatte.
   - was die industrielle Revolution auslöste.
 ]
 
@@ -95,7 +95,7 @@ Der griechische Gelehrte #smallcaps[Heron] von Alexandria, der im ersten Jahrhun
   columns: (1fr, 6cm),
   gutter: .5cm,
   [
-    - Betrachten Sie die Abbildungen nebenan. Beides sind Erfindungen des Griechen #smallcaps[Heron]. Links wird ein Altarfeuer wie von Geisterhand gelöscht, rechts sehen Sie eine Maschine, die Heron "Äolipile" nannte. Versuchen Sie herauszufinden, wie diese Maschinen funktionieren!
+    - Betrachten Sie die Abbildungen nebenan. Beides sind Erfindungen des Griechen #smallcaps[Heron]. Links wird ein Altarfeuer wie von Geisterhand gelöscht, rechts sehen Sie eine Maschine, die #smallcaps[Heron] "Äolipile" nannte. Versuchen Sie herauszufinden, wie diese Maschinen funktionieren!
   ],
   [
     #grid(
@@ -240,7 +240,7 @@ Bereits James #smallcaps[Watt] erkannte, dass bei Bemühungen um die Erhöhung d
         line((2.5, .75), (3.5, .75))
         line((2.5, 1.25), (3.5, 1.25))
         rect((3.2, .75), (3.4, 1.25), fill: haupt-farbe)
-        line((2.7, 1), (3.3, 1), stroke: green, mark: (end: "barbed"), name: "deltaS")
+        line((3.3, 1), (2.7, 1), stroke: green, mark: (end: "barbed"), name: "deltaS")
         content((1.5, 1), text(size: 8pt)[Kammer 1\ Druck $p$])
         content((4.5, 1), text(size: 8pt)[Kammer 2\ Druck #qty("0", "Pa")])
         content("deltaS", text(green, $Delta s$), anchor: "south", padding: 2pt)
@@ -290,7 +290,7 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Wir starten dabei mit einem Gas im Zustand 1. Über Zustand 2 gelangen wir zu Zustand 3. Dabei wird vom Gas mechanische Arbeit (in der Abbildung rot dargestellt und wird unten von hellblau zugedeckt) verrichtet. Anschliessend geht es über Zustand 4 wieder zu Zustand 1, der dem Anfangszustand entspricht. Dieser zweite Teil braucht Energie (hellblau dargestellt). Weil aber die abgegebene Arbeit grösser ist, als die zugeführte Energie, bleibt am nach einem Umlauf die Arbeit $W$ übrig. Es wird also vom Gas mehr mechanische Arbeit abgegeben, als von diesem bei der Kompression aufgenommen wird. Wie wir von der vorangehenden Seite wissen, entspricht die umrandete Fläche der abgegebenen Arbeit $W$, die man aus diesem Kreisprozess erhält.
+    Wir starten dabei mit einem Gas im Zustand 1. Über Zustand 2 gelangen wir zu Zustand 3. Dabei wird vom Gas mechanische Arbeit (in der Abbildung rot dargestellt und wird unten von hellblau zugedeckt) verrichtet. Anschliessend geht es über Zustand 4 wieder zu Zustand 1, der dem Anfangszustand entspricht. Dieser zweite Teil braucht Energie (hellblau dargestellt). Weil aber die abgegebene Arbeit grösser ist, als die zugeführte Energie, bleibt nach einem Umlauf die Arbeit $W$ übrig. Es wird also vom Gas mehr mechanische Arbeit abgegeben, als von diesem bei der Kompression aufgenommen wird. Wie wir von der vorangehenden Seite wissen, entspricht die umrandete Fläche der abgegebenen Arbeit $W$, die man aus diesem Kreisprozess erhält.
   ],
   [
     #figure(
@@ -645,7 +645,7 @@ Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit ein
 
 == Fragen
 
-- Beantworten Sie diese Frage, falls Sie den Posten 4 (Benzin-Motoren) bereits absolviert haben. Der Dieselmotor hat einige Ähnlichkeiten mit dem Otto-Motor. Vergleichen Sie die beiden Motoren miteinander und stellen Sie Gemeinsamkeiten und Unterschiede zusammen. Was sind Vor- und Nachteile des einen gegenüber dem andern?
+- Beantworten Sie diese Frage, falls Sie den Posten 4 (Benzin-Motoren) bereits absolviert haben. Der Dieselmotor hat einige Ähnlichkeiten mit dem #smallcaps[Otto]-Motor. Vergleichen Sie die beiden Motoren miteinander und stellen Sie Gemeinsamkeiten und Unterschiede zusammen. Was sind Vor- und Nachteile des einen gegenüber dem andern?
 
 #schreibpapier(height: 2cm)
 
@@ -655,7 +655,7 @@ Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit ein
     columns: (1fr, auto),
     gutter: .5cm,
     [
-      - Bestimmen Sie die Arbeit $W$ (in J), die in einer rechteckigen Fläche des Gitternatzes in der Abbildung "steckt", indem Sie die Seitenlängen des Rechtecks bestimmen ($p$, $V$) und daraus die Arbeit $W$ als Produkt der beiden Grössen berechnen.
+      - Bestimmen Sie die Arbeit $W$ (in J), die in einer rechteckigen Fläche des Gitternetzes in der Abbildung "steckt", indem Sie die Seitenlängen des Rechtecks bestimmen ($p$, $V$) und daraus die Arbeit $W$ als Produkt der beiden Grössen berechnen.
 
       - Schätzen Sie dann die Arbeit, die der Kolben während den vier Takten verrichtet, indem Sie die von der Kurve eingeschlossenen Fläche anhand des Gitters von Auge abschätzen.
 
@@ -831,7 +831,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 
 Der Kompressor (roter Pfeil) sitzt vor dem Motorblock und verdichtet die angesogene Luft. Angetrieben wird der Kompressor direkt vom Motor.
 
-Kompressoren und Turbolader kommen hauptsächlich in Otto- und Dieselmotoren zum Einsatz. Sie haben alle eines gemeinsam: Sie verdichten die Luft bereits vor dem Zylinder und erhöhen dadurch den Druck auf einige Bar. Öffnet sich nun das Einlassventil, so wird die Luft vom Kolben, der sich nach unten bewegt, nicht angesogen, sondern, aufgrund des erhöhten Drucks, in den Zylinder gepresst. Dadurch bringt man im Falle des Benzinmotors mehr Gemisch und im Falle des Dieselmotors mehr Luft in den Hubraum. Dies hat eine Leistungssteigerung zur Folge, die allerdings mit einem erhöhten Treibstoffbedarf einher geht. Weil die vor dem Zylinder komprimierten Gase jedoch eine höhere Temperatur aufweisen, können diese Gase im Zylinder nicht mehr gleich stark komprimiert werden wie ohne Kompressor, da sie sonst zu heiss werden und zu früh selbständig explodieren. Deshalb ist das Verdichtungsverhältnis etwas geringer als in Motoren ohne Kompressor (die häufig auch "Sauger" genannt werden). Etwas Abhilfe verschafft ein Ladeluftkühler, der die Luft nach dem Komprimieren und vor dem Zylinder von etwa #qty("200", "Celsius") auf #qty("40", "Celsius") abkühlt.
+Kompressoren und Turbolader kommen hauptsächlich in #smallcaps[Otto]- und Dieselmotoren zum Einsatz. Sie haben alle eines gemeinsam: Sie verdichten die Luft bereits vor dem Zylinder und erhöhen dadurch den Druck auf einige Bar. Öffnet sich nun das Einlassventil, so wird die Luft vom Kolben, der sich nach unten bewegt, nicht angesogen, sondern, aufgrund des erhöhten Drucks, in den Zylinder gepresst. Dadurch bringt man im Falle des Benzinmotors mehr Gemisch und im Falle des Dieselmotors mehr Luft in den Hubraum. Dies hat eine Leistungssteigerung zur Folge, die allerdings mit einem erhöhten Treibstoffbedarf einher geht. Weil die vor dem Zylinder komprimierten Gase jedoch eine höhere Temperatur aufweisen, können diese Gase im Zylinder nicht mehr gleich stark komprimiert werden wie ohne Kompressor, da sie sonst zu heiss werden und zu früh selbständig explodieren. Deshalb ist das Verdichtungsverhältnis etwas geringer als in Motoren ohne Kompressor (die häufig auch "Sauger" genannt werden). Etwas Abhilfe verschafft ein Ladeluftkühler, der die Luft nach dem Komprimieren und vor dem Zylinder von etwa #qty("200", "Celsius") auf #qty("40", "Celsius") abkühlt.
 
 Von Kompressoren spricht man im allgemeinen dann, wenn der Verdichter mechanisch vom Motor selber angetrieben wird. Turbolader hingegen sind Aggregate, bei welchen die Abgase durch eine Turbine strömen und diese in Rotation versetzen. Ein auf der gleichen Welle sitzender Radialverdichter komprimiert die Frischluft. Turbinen nutzen somit den in den Abgasen verbliebene Druck. Turbolader haben den Nachteil, dass die Abgase erst bei höheren Motorendrehzahlen den nötigen Druck haben, damit der Turbolader den gewünschten Druck erzeugen kann. Dadurch wird vebrauchssteigerndes Fahren bei hohen Drehzahlen zum Teil notwendig. Moderne Turbomotoren arbeiten deshalb mit kleineren Turbinen, die wegen des geringeren Querschnitts bereits bei tiefen Drehzahlen höhere Drücke erzeugen. Bei höheren Drehzahlen öffnet dann ein Bypass (_waste gate_), der die Luft an der Turbine vorbei leitet, womit der Druck nicht mehr weiter ansteigt. Kompressoren, die mechanisch angetrieben sind, haben dieses Problem weniger, liefern also bereits bei tieferen Drehzahlen den nötigen Druck, fallen aber häufig durch viel Lärm auf.
 
@@ -858,7 +858,7 @@ Früher waren Kompressoren und Turbolader ein Zeichen für Sportlichkeit. Weil d
 
 == Ablauf
 
-Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Der Kühlschrank im Praktikumszimmer dient als Experiment und zur Veranschaulichung der Erklärungen im folgenden Text. Für diesen Posten benötigen Sie 25 Minuten.
+Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Das Kühlschrankmodell dient als Experiment und zur Veranschaulichung der Erklärungen im folgenden Text. Für diesen Posten benötigen Sie 25 Minuten.
 
 == Vom Eismann zum Kühlschrank
 
@@ -866,11 +866,11 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Der Kühlschr
   number-type: "old-style",
 )[Die Kühlmaschine wurde 1870 erfunden. Es zogen allerdings noch einige Jahrzehnte ins Land, bis der Kühlschrank für jedermann erschwinglich wurde. Bis dahin verkaufte ein Eismann, der regelmässig mit seinem Wagen in den Strassen erschien, Eisbarren. Diese wurden in einem gut isolierten Schrank aufbewahrt und kühlten diesen. Die Schränke mussten entsprechend regelmässig mit Eis aufgefüllt werden. Das Eis wurde im Winter künstlich angelegten Weihern entnommen und in riesigen, tiefen Kellern gestapelt, sodass es bis ans Ende des folgenden Sommers reichte. Auch Gletschereis wurde verwendet. Vielleicht haben Sie noch Grosseltern, die nicht vom "Kühlschrank", sondern vom "Eisschrank" sprechen.
 
-  Diese Idee zu kühlen ist nicht neu. Bereits der römische Kaiser Heliogabal liess in seinem Garten um 220 n.Chr. Schnee aus den Abruzzen anhäufen, um Getränke im Sommer kühlen zu können. Bierbrauereien gehörten am Ende des 19. Jahrhunderts zu den grössten Eiskonsumenten. Deshalb erstaunt es nicht, dass gerade ein deutscher Brauereibesitzer dem Ingenieur Carl von Linde Geld zur Verfügung stellte, damit dieser seine Erfindung einer Kühlmaschine in die Tat umsetzen konnte. Das Prinzip ist bis heute das gleiche geblieben.]
+  Diese Idee zu kühlen ist nicht neu. Bereits der römische Kaiser #smallcaps[Heliogabal] liess in seinem Garten um 220 n.Chr. Schnee aus den Abruzzen anhäufen, um Getränke im Sommer kühlen zu können. Bierbrauereien gehörten am Ende des 19. Jahrhunderts zu den grössten Eiskonsumenten. Deshalb erstaunt es nicht, dass gerade ein deutscher Brauereibesitzer dem Ingenieur Carl #smallcaps[von Linde] Geld zur Verfügung stellte, damit dieser seine Erfindung einer Kühlmaschine in die Tat umsetzen konnte. Das Prinzip ist bis heute das gleiche geblieben.]
 
 == Funktionsweise des Kühlschranks
 
-Finden Sie durch Berühren heraus, was beim Kühlschrank im Praktikumszimmer dem in der Folge beschriebenen entspricht.
+Finden Sie durch Berühren heraus, was beim Kühlschrankmodell dem in der Folge beschriebenen entspricht.
 
 #grid(
   columns: (auto, 1fr),
@@ -940,7 +940,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
   ],
 )
 
-Mittlerweile hat sich die Dampfmaschine als Arbeitsmaschine verabschiedet. In grossen Kraftwerken jedoch hat sich der Dampf als Arbeitsmedium weiterhin behaupten können. So wird in Wärmekraftwerken, zu welchen unter anderem Kernkraftwerke, Kohlekraftwerke und Ölkraftwerke zählen, auf jeweils unterschiedliche Art Wasser zum Verdampfen gebracht. Der grosse Druck des Dampfes wird in allen diesen Kraftwerkstypen dazu genutzt, um eine Dampfturbine (s. Abb. 1 und 2) in Rotation zu versetzen. In Kraftwerken sind dabei mehrere solche Turbinen hintereinander geschaltet. Zuerst passiert der Dampf die Hochdruckturbine, danach die Niederdruckturbinen. Wichtig ist hier (analog zur Dampfmaschine), dass der Dampf hinter den Turbinen in einem Kondensator gekühlt wird. Das heisst, in einem "Kühler" wird der Dampf abgekühlt, wobei dieser kondensiert. Damit sinkt der Druck auf der Turbinenrückseite zusätzlich. Dies geschieht häufig mittels eines Kühlturms oder mit einer Kühlung in einem grossen, nahe gelegenen Fluss. Nur ein grosser Druckunterschied zwischen Turbinenvorder- und -rückseite erlaubt einen akzeptablen Wirkungsgrad. Der Wirkungsgrad solcher Kraftwerke liegt heute bei etwas über 40%.
+Mittlerweile hat sich die Dampfmaschine als Arbeitsmaschine verabschiedet. In grossen Kraftwerken jedoch hat sich der Dampf als Arbeitsmedium weiterhin behaupten können. So wird in Wärmekraftwerken, zu welchen unter anderem Kernkraftwerke, Kohlekraftwerke und Ölkraftwerke zählen, auf jeweils unterschiedliche Art Wasser zum Verdampfen gebracht. Der grosse Druck des Dampfes wird in all diesen Kraftwerkstypen dazu genutzt, um eine Dampfturbine (s. Abb. 1 und 2) in Rotation zu versetzen. In Kraftwerken sind dabei mehrere, solche Turbinen hintereinander geschaltet. Zuerst passiert der Dampf die Hochdruckturbine, danach die Niederdruckturbinen. Wichtig ist hier (analog zur Dampfmaschine), dass der Dampf hinter den Turbinen in einem Kondensator gekühlt wird. Das heisst, in einem "Kühler" wird der Dampf abgekühlt, wobei dieser kondensiert. Damit sinkt der Druck auf der Turbinenrückseite zusätzlich. Dies geschieht häufig mittels eines Kühlturms oder mit einer Kühlung in einem grossen, nahe gelegenen Fluss. Nur ein grosser Druckunterschied zwischen Turbinenvorder- und -rückseite erlaubt einen akzeptablen Wirkungsgrad. Der Wirkungsgrad solcher Kraftwerke liegt heute bei etwas über 40%.
 
 #pagebreak()
 
@@ -962,7 +962,7 @@ Mittlerweile hat sich die Dampfmaschine als Arbeitsmaschine verabschiedet. In gr
 #lernziele[
   An diesem Posten erfahren Sie
   - wie der einfachste Antrieb mit Wärmeenergie funktioniert.
-  - wie der Wirkungsgrad, welcher sich mit einer Wärmearbeitsmaschine maximal erreichen lässt, bestimmt werden kann.
+  - wie der Wirkungsgrad, der sich mit einer Wärmearbeitsmaschine maximal erreichen lässt, bestimmt werden kann.
 ]
 
 == Ablauf
@@ -1083,9 +1083,9 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 
 #set math.equation(numbering: "(1)")
 
-Mit Hilfe des Diagramms (letzte Seite) werden wir berechnen können, wie gut der Wirkungsgrad einer Rakete maximale überhaupt sein kann. Ob man diesen Wert dann auch tatsächlich erreicht, hängt davon ab, wie gut die Rakete gebaut wird.
+Mit Hilfe des Diagramms (vorherige Seite) werden wir berechnen können, wie hoch der maximale Wirkungsgrad einer Rakete überhaupt sein kann. Ob man diesen Wert dann auch tatsächlich erreicht, hängt davon ab, wie gut die Rakete gebaut wird.
 
-Das Diagramm kann so verstanden werden: Eine Wärmearbeitsmaschine nutzt die innere Energie $U_1$ eines heissen Gases aus und wandelt einen Teil davon in Arbeit W um. Die Abgase, die die Maschine nicht weiter nutzen kann, stösst diese wieder aus. Die Abgase haben eine innere Energie $U_2$.
+Das Diagramm kann so verstanden werden: Eine Wärmearbeitsmaschine nutzt die innere Energie $U_1$ eines heissen Gases aus und wandelt einen Teil davon in Arbeit $W$ um. Die Abgase, die die Maschine nicht weiter nutzen kann, stösst diese wieder aus. Die Abgase haben eine innere Energie $U_2$.
 
 Ein heisses Gas befinde sich in der Rakete. Das Gas besteht aus $N$ Teilchen und hat die Temperatur $T_1$. Damit ergibt sich für die innere Energie $U_1$ des Gases:
 
@@ -1136,7 +1136,7 @@ Lösen Sie diese Gleichung nun nach dem Wirkungsgrad $eta$ auf:#h(1fr)
     [Dampfturbine], [#qty("800", "K")], [#qty("320", "K")], [], [],
   )
 
-- Was für eine Bedingung müsste erfüllt sein, dass der Wirkungsgrad einer Wärmearbeitsmaschine nahezu 100% beträgt? Weshalb ist das auf der Erde nicht möglich?
+- Welche Bedingung müsste erfüllt sein, dass der Wirkungsgrad einer Wärmearbeitsmaschine nahezu 100% beträgt? Weshalb ist das auf der Erde nicht möglich?
 
 #schreibpapier()
 #pagebreak()
