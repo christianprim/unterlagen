@@ -24,7 +24,7 @@
   [*Posten 1*],
   [Aufgaben],
   [
-    - Durch das Erwärmen der Luft im Glaskolben dehnt sich die Luft darin aus und drückt das Wasser heraus in das Becherglas. Dieses wird immer schwerer und gewinnt irgendwann gegen das Gegengewicht. Dadurch öffnet sich die Tür.
+    - Durch das Erwärmen der Luft im Glaskolben dehnt sich die Luft darin aus und drückt das Wasser in das Becherglas hinaus. Dieses wird immer schwerer und gewinnt irgendwann gegen das Gegengewicht. Dadurch öffnet sich die Tür.
 
       Es ist keine Wärmearbeitsmaschine im Sinn der Definition auf dem Einführungsblatt, da keine periodische Bewegung entsteht.
 
@@ -64,7 +64,7 @@
         row-gutter: 0.5cm,
         [2-Takt:],
         [Vorteile:],
-        [Leistungsfähiger da doppelt so viele Arbeitstakte; Billiger, da weniger bewegliche Teile; Wenig schadenanfällig],
+        [Leistungsfähiger da doppelt so viele Arbeitstakte; billiger, da weniger bewegliche Teile; wenig schadenanfällig],
         [],
         [Nachteile:],
         [viele Abgase (schlechte Trennung von verbranntem und frischem Gemisch führt zur Durchmischung). Eine bessere Trennung wird dadurch erreicht, in dem man das Treibstoffgemisch in den 				abgeschlossenen Zylinder einspritzt, dabei geht kein Treibstoff 				„verloren“. Allerdings kann dieser Motor nicht mit	Dreiwegkatalysator betrieben werden, da der Motor, soll er immer	mit frischen Gemisch arbeiten, gespült werden muss (mit	Gebläse), was viel Luft im Auspuff ergibt. Ohne Spülung fällt die Leistung zusammen, sodass diese kaum höher als bei einem Viertakter ist.],
@@ -76,6 +76,7 @@
       Gleich: 4 Takte
 
       Diesel hat besseren Wirkungsgrad (ist also sparsamer), hat aber weniger Leistung bei 	gleicher Grösse. Schadstoffe sind beim Diesel-Motor problematischer.
+      #v(1em)
   ],
   [*Posten 5*],
   [Fragen],
@@ -95,7 +96,7 @@
   [
     - Vorteile des Wankel: Klein und leicht; Sanfter Lauf; Keine Hin- und Herbewegung; Theoretisch sparsam; 3 Takte finden gleichzeitig statt pro Kolben; Keine Ventile
 
-      Nachteile des Wankel: Abdichten oben, unten und an den Kanten schwierig; Schmieröl auch an den Wänden in der Verbrennungszone nötig wegen Dichtleisten, daraus folgt, dass viel HC (Kohlenwasserstoffe) in den Abgasen; Teure Herstellung; In der Praxis nicht sparsam
+      Nachteile des Wankel: Abdichten oben, unten und an den Kanten schwierig; Schmieröl auch an den Wänden in der Verbrennungszone nötig wegen Dichtleisten, daraus folgt, dass viel HC (Kohlenwasserstoffe) in den Abgasen; teure Herstellung; in der Praxis nicht sparsam
   ],
   [*Posten 7*],
   [Aufgabe],
@@ -129,9 +130,9 @@
         callout((6.3, 7.7), (7.5, 10.65), (8.5, 10.65), [Kupplung], align-dir: right)
         callout((6.2, 9), (7, 11.35), (8.5, 11.35), [Zündspule], align-dir: right)
         callout((7.3, 7.7), (8, 10), (8.5, 10), [Getriebe], align-dir: right)
-        callout((8, 8), (10.5, 2.7), (11, 2.7), [Schalldämpfer], align-dir: right)
+        callout((9.25, 8), (10.5, 2.7), (11, 2.7), [Schalldämpfer], align-dir: right)
         callout((8, 4.5), (10.5, 2), (11, 2), [Batterie], align-dir: right)
-        callout((10, 8), (10.5, 3.4), (11, 3.4), [Katalysator], align-dir: right)
+        callout((10, 8), (10.75, 3.4), (11, 3.4), [Katalysator], align-dir: right)
         callout((12.2, 7.5), (13, 12), (13.5, 12), [Differentialgetriebe], align-dir: right)
         callout((13, 7.9), (13.25, 11), (13.5, 11), [Auspuff], align-dir: right)
 
@@ -143,7 +144,7 @@
   [Fragen],
   [
     - Er hat bei eher konstanten Drehzahlen den besseren Wirkungsgrad, weil dann die Turbine nicht dauernd beschleunigt und abgebremst werden muss, was zu Verlusten führen würde.
-    - Wir betrachten dazu ein kleines Zahlenbeispiel. Wir hätten einen Motor, der die Leistung $P$ abgeben kann und dafür pro #qty("100", "km") 6 Liter Benzin benötigt. Daneben haben wir einen Motor, der die 1.5fache Leistung hat (1.5 $P$) und dafür pro #qty("100", "km") 12 Liter Benzin benötigt. Der zweite Motor hat also eine deutlich höhere Leistung (Faktor 1.5), benötigt dafür aber das doppelte an Treibstoff. Damit ist der Wirkungsgrad (Verhältnis Nutzen zu Aufwand, oder hier eben Leistung (mal Zeit) zu Treibstoffenergie) im ersten Fall besser! Dieses Beispiel gilt allerdings nur für den Fall, dass die Motoren mit Höchstleistung arbeiten, was in Realität selten der Fall ist. Motoren arbeiten sehr häufig im so genannten Teillastbereich, d.h. sie geben nur einen Bruchteil von der Leistung ab, die sie abgeben könnten.
+    - Ein kleines Zahlenbeispiel dazu: Ein Motor, der die Leistung $P$ abgeben kann, benötigt dafür pro #qty("100", "km") 6 Liter Benzin. Daneben ein anderer Motor, der die 1.5fache Leistung hat (1.5 $P$) und dafür pro #qty("100", "km") 12 Liter Benzin benötigt. Der zweite Motor hat also eine deutlich höhere Leistung (Faktor 1.5), benötigt dafür aber das doppelte an Treibstoff. Damit ist der Wirkungsgrad (Verhältnis Nutzen zu Aufwand, oder hier eben Leistung (mal Zeit) zu Treibstoffenergie) im ersten Fall besser! Dieses Beispiel gilt allerdings nur für den Fall, dass die Motoren mit Höchstleistung arbeiten, was in Realität selten der Fall ist. Motoren arbeiten sehr häufig im so genannten Teillastbereich, d.h. sie geben nur einen Bruchteil von der Leistung ab, die sie abgeben könnten.
   ],
   [*Posten 9*],
   [Frage],
@@ -177,7 +178,7 @@
   [*Posten 12*],
   [Fragen],
   [
-    - Schlechterer Wirkungsgrad eines Düsentriebwerks im Vergleich zu Benzin-Motor. Im Prinzip müsste hier der "Vortriebswirkungsgrad" betrachtet werden, der selbst bei einem eigentlich guten Triebwerkswirkungsgrad bei tiefen Geschwindigkeiten tief ist; Zu laut; Zu windig
-    - Siehe erste Frage.
+    - Schlechterer Wirkungsgrad eines Düsentriebwerks im Vergleich zu Benzin-Motor. Im Prinzip müsste hier der "Vortriebswirkungsgrad" betrachtet werden, der selbst bei einem eigentlich guten Triebwerkswirkungsgrad bei tiefen Geschwindigkeiten tief ist; zu laut; zu windig.
+    - In etwa dieselbe Antwort wie beim Auto.
   ],
 )

@@ -80,7 +80,7 @@ Der griechische Gelehrte #smallcaps[Heron] von Alexandria, der im ersten Jahrhun
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Eine seiner berühmtesten Erfindung war die automatische Öffnung einer Tempeltür: Entzündete man auf einem Altar vor dem Tempel ein Opferfeuer, so öffnete sich die Tempeltür. Eine Nachbildung ist auf dem Bild zu sehen! Im oberen Kolben wurde die Luft durch das Feuer erwärmt. Dadurch nahm ihr Volumen zu und begann das Wasser im unteren Kolben zu verdrängen. Dieses Wasser konnte über eine Leitung abfliessen und füllte ein weiteres Gefäss auf. Sobald dieses Gefäss schwer genug war, öffnete sich die Tür!
+    Eine seiner berühmtesten Erfindung war die automatische Öffnung einer Tempeltür: Entzündete man auf einem Altar vor dem Tempel ein Opferfeuer, so öffnete sich die Tempeltür. Eine Nachbildung ist auf dem Bild zu sehen. Im oberen Kolben wurde die Luft durch das Feuer erwärmt. Dadurch nahm ihr Volumen zu und begann das Wasser im unteren Kolben zu verdrängen. Dieses Wasser konnte über eine Leitung abfliessen und füllte ein weiteres Gefäss auf. Sobald dieses Gefäss schwer genug war, öffnete sich die Tür!
   ],
   [
     #image("../bilder/tempeltüre.jpg", width: 7.5cm)
@@ -90,7 +90,6 @@ Der griechische Gelehrte #smallcaps[Heron] von Alexandria, der im ersten Jahrhun
 == Aufgaben
 
 - Versuchen Sie das Prinzip der Tempeltür anhand der Foto nachzuvollziehen!
-#schreibpapier(height: 2cm)
 #grid(
   columns: (1fr, 6cm),
   gutter: .5cm,
@@ -113,7 +112,7 @@ Der griechische Gelehrte #smallcaps[Heron] von Alexandria, der im ersten Jahrhun
   number-type: "old-style",
 )[Erst im 16. Jahrhundert wurden die Ideen von #smallcaps[Heron] wiederentdeckt. Verschiedene Konstrukteure erfanden Maschinen, die wenig Arbeit bei enormem Feueraufwand verrichten konnten. Dabei baute der eine auf dem Werk des andern auf. Der Engländer Thomas #smallcaps[Newcomen] (1663-1729) konstruierte eine Dampfmaschine, die gerade ein Prozent der Energie, die man in Form von Wärme hineinsteckte, in Arbeit umwandelte – eine miserable Ausbeute, und dennoch das Beste, was es damals gab.
 
-  Am 5. Januar 1769 erhielt der schottische Mechaniker James #smallcaps[Watt] das Patent für seine Dampfmaschine. Sie erreichte eine viel bessere Ausbeute als alles bisher Erfundene. Diese Maschine löste einen wahren Boom aus und machte menschliche Arbeitskräfte ersetzbar. Die industrielle Revolution nahm ihren Anfang. Noch bis ins 20. Jahrhundert blieben Dampfmaschinen nach dem Prinzip von James #smallcaps[Watt] konkurrenzlos. Und selbst die Benzinmotoren von heute können ihre Verwandtschaft zur Dampfmaschine nicht verbergen. Mit der Dampfmaschine schossen Industriebetriebe aus dem Boden und die Wasserkraft als Antrieb für Webstühle wurde ersetzbar. Diese Erfindung markiert einen Meilenstein in der Geschichte der Menschheit. Und erstmals konnte eine Maschine auch sich selber transportieren, mobile Maschinen konnten nun gebaut werden.]
+  Am 5. Januar 1769 erhielt der schottische Mechaniker James #smallcaps[Watt] das Patent für seine Dampfmaschine. Sie erreichte eine viel bessere Ausbeute als alles bisher Erfundene. Diese Maschine löste einen wahren Boom aus und machte menschliche Arbeitskräfte ersetzbar. Die industrielle Revolution nahm ihren Anfang. Noch bis ins 20. Jahrhundert blieben Dampfmaschinen nach dem Prinzip von James #smallcaps[Watt] konkurrenzlos. Selbst die Benzinmotoren von heute können ihre Verwandtschaft zur Dampfmaschine nicht verbergen. Mit der Dampfmaschine schossen Industriebetriebe aus dem Boden und die Wasserkraft als Antrieb für Webstühle wurde ersetzbar. Diese Erfindung markiert einen Meilenstein in der Geschichte der Menschheit. Erstmals konnte eine Maschine auch sich selber transportieren, mobile Maschinen konnten nun gebaut werden.]
 
 #grid(
   columns: (auto, 1fr),
@@ -122,11 +121,11 @@ Der griechische Gelehrte #smallcaps[Heron] von Alexandria, der im ersten Jahrhun
     #image("../bilder/dampfmaschineModell.jpg", width: 8cm)
   ],
   [
-    Und so funktioniert die Dampfmaschine nach James #smallcaps[Watt]:
-    Heisser Frischdampf wird aus einem Dampfkessel der Maschine zugeführt. Ein kleiner Steuerkolben lässt Dampf nur auf die linke Seite des (grösseren) Arbeitskolbens strömen (s. Abb). Dadurch wird dieser auf die rechte Seite gedrückt und versetzt ein Schwungrad in Bewegung. Der Steuerkolben, der ebenfalls mit dem Schwungrad verbunden ist, klemmt die Dampfzufuhr zum Arbeitskolben ab und öffnet die Dampfzufuhr auf die rechte Seite des Arbeitskolbens, wodurch sich dieser wieder nach links bewegt. Das Ganze läuft dauernd so weiter.
+    So funktioniert die Dampfmaschine nach James #smallcaps[Watt]:
+    Heisser Frischdampf wird aus einem Dampfkessel der Maschine zugeführt. Ein kleiner Steuerkolben lässt Dampf nur auf die linke Seite des (grösseren) Arbeitskolbens strömen (s. Abb). Dadurch wird dieser auf die rechte Seite gedrückt und versetzt ein Schwungrad in Bewegung. Der Steuerkolben, der ebenfalls mit dem Schwungrad verbunden ist, klemmt die Dampfzufuhr zum Arbeitskolben ab und öffnet die Dampfzufuhr auf die rechte Seite des Arbeitskolbens, wodurch sich dieser wieder nach links bewegt. Dieser Vorgang wiederholt sich fortlaufend.
   ],
 )
-Anzumerken ist noch, dass durch den Steuerkolben jeweils in dem Moment, in welchem z.B. rechts die Dampfzufuhr geöffnet wird, links ein Kanal öffnet, durch den der sich noch im linken Teil befindliche Dampf nach aussen entweichen kann. Dieser Kanal ist im Modell oben als "U-förmige" Aussparung zu erkennen.
+Zusätzlich ist anzumerken: Wenn der Steuerkolben auf der einen Seite (z. B. rechts) Frischdampf einlässt, öffnet er auf der anderen Seite (links) gleichzeitig einen Kanal. So kann der verbrauchte Dampf nach aussen entweichen. Im Modell oben ist dieser Kanal gut an der U-förmigen Aussparung zu erkennen.
 
 #text(
   size: 8pt,
@@ -169,7 +168,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Frage. Führen Sie da
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    #text(number-type: "old-style")[Der schottische Pfarrer Robert #smallcaps[Stirling] (1790 - 1878) liess den nach ihm benannten Heissluftmotor 1816 patentieren, in welchem sich zwei Kolben, ein Arbeits- und ein Verdrängerkolben, im gleichen Zylinder auf- und abbewegen,] wobei die beiden Kolben um 90° versetzt an der Kurbelwelle festgemacht sind (s. Abb. rechts). Der Arbeitskolben verschliesst den Zylinder dicht, der Verdrängerkolben hingegen nicht, er lässt die Luft vom oberen in den unteren Teil durchströmen, wobei dabei die Kupferwolle Wärme aufnehmen und auch wieder abgeben kann. Dieser Motor ist äusserst raffiniert und die genaue Funktionsweise nicht ganz einfach zu verstehen. Das Prinzip funktioniert so: Oben am Zylinder wird geheizt, seitlich unten mit Kühlwasser gekühlt. Die Luft oberhalb des Verdrängerkolbens ist dadurch etwas wärmer als unterhalb.
+    #text(number-type: "old-style")[Der schottische Pfarrer Robert #smallcaps[Stirling] (1790 - 1878) liess den nach ihm benannten Heissluftmotor 1816 patentieren. In diesem Motor bewegen sich ein Arbeits- und ein Verdrängerkolben, im gleichen Zylinder auf und ab,] wobei die beiden Kolben um 90° versetzt an der Kurbelwelle festgemacht sind (s. Abb. rechts). Der Arbeitskolben verschliesst den Zylinder dicht, der Verdrängerkolben hingegen nicht, er lässt die Luft vom oberen in den unteren Teil durchströmen, wobei dabei die Kupferwolle Wärme aufnehmen und auch wieder abgeben kann. Dieser Motor ist äusserst raffiniert und die genaue Funktionsweise nicht ganz einfach zu verstehen. Das Prinzip funktioniert so: Oben am Zylinder wird geheizt, seitlich unten mit Kühlwasser gekühlt. Die Luft oberhalb des Verdrängerkolbens ist dadurch etwas wärmer als unterhalb.
   ],
   [
     #align(center + horizon, image("../bilder/stirlingmotor-aufbau.png", width: 5cm))
@@ -177,12 +176,12 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Frage. Führen Sie da
 )
 Abb. 2a: Der Verdrängerkolben, der sich vorher im heissen Bereich des Zylinders aufgewärmt hat, kommt nach unten und erwärmt beim Vorbeigehen die Luft. Da die warme Luft ein grösseres Volumen beansprucht, presst sie den Arbeitskolben nach unten. Der Stirlingmotor verrichtet Arbeit.
 
-Abb. 2b: Unten angekommen, muss der Arbeitskolben wieder nach oben gelangen. Dafür muss an ihm Arbeit verrichtet werden. Damit diese Arbeit aber geringer ist, als die Arbeit, die er vorher verrichtet hat, wird die Luft über dem Arbeitskolben wieder abgekühlt. Dies wird mit dem Verdrängerkolben bewerkstelligt, der sich bereits wieder im kalten Bereich abgekühlt hat und die Luft beim Hochgehen mit abkühlt.
+Abb. 2b: Sobald der Arbeitskolben seinen tiefsten Punkt erreicht hat, muss er wieder nach oben. Dafür muss man Energie aufwenden. Damit der Motor unterm Strich mehr Energie erzeugt, als er für den Rückweg verbraucht, wird die Luft über dem Arbeitskolben abgekühlt. Hier kommt der Verdrängerkolben ins Spiel: Er ist bereits wieder abgekühlt und entzieht der Luft beim Nach-oben-Gehen die Wärme.
 
 Abb. 2c: Der Verdrängerkolben ist oben angekommen. Die Luft über dem Arbeitskolben ist kühler als in Abb. 2a. Da sie ein geringeres Volumen beansprucht, wird das Hochkommen des Arbeitskolbens begünstigt.
 
-Abb. 2d: Noch immer bewegt sich der Arbeitskolben nach oben, der Verdrängerkolben jedoch bereits wieder nach unten. Die Luft wird langsam wieder wärmer. Noch immer wird Energie für diese Bewegung gebraucht, doch sobald sich wieder der Arbeitskolben nach unten bewegt (Abb. 2a), wird wieder Energie abgegeben.
-Über eine ganze Umdrehung gerechnet wird also Energie abgegeben (pro Umlauf wird mehr Energie abgegeben als gebraucht). Das Spiel beginnt von vorne.
+Abb. 2d: Noch immer bewegt sich der Arbeitskolben nach oben, der Verdrängerkolben jedoch bereits wieder nach unten. Die Luft wird langsam wieder wärmer. Für diese Bewegung wird weiter Energie benötigt, doch sobald sich der Arbeitskolben nach unten bewegt (Abb. 2a), wird wieder Energie abgegeben.
+Über eine ganze Umdrehung gerechnet wird also Energie abgegeben (pro Umlauf wird mehr Energie abgegeben als gebraucht). Der Vorgang beginnt von vorne.
 
 #align(center, grid(
   columns: 4,
@@ -196,7 +195,7 @@ Abb. 2d: Noch immer bewegt sich der Arbeitskolben nach oben, der Verdrängerkolb
   [Abb. 2a], [Abb. 2b], [Abb. 2c], [Abb. 2d],
 ))
 
-Stirling-Motoren haben leider bisher nie den grossen Durchbruch erlangt, obwohl moderne Exemplare Wirkungsgrade von bis zu maximal 36% erreichen, äusserst zuverlässig arbeiten und es keine Rolle spielt, wie geheizt wird. Des Weiteren arbeitet der Motor beinahe geräuschlos, weil weder Ventil- noch Ansaug- oder Auspuffgeräusche (s. Benzin-, Dieselmotoren und Dampfmaschine) vorhanden sind. In Kombination mit Sonnenenergie erlebt dieser Motor zur Zeit einen Aufschwung, da mit gebündelten Sonnenstrahlen der obere Teil des Zylinders einfach geheizt werden kann. In diesem Einsatzgebiet wird dieser Motor zur Zeit von Neuem erprobt. Ob es bald Serienprodukte geben wird, muss noch abgewartet werden. Interessant ist der Motor auch bei umgekehrter Anwendung: Dreht man ihn von Hand, so läuft der oben beschriebene Prozess rückwärts. Dadurch erwärmt sich der Zylinder auf der einen Seite und kühlt sich auf der anderen Seite ab – wir haben ein einfaches Kühlsystem, das ohne schädliche Kältemittel auskommt! Der Wirkungsgrad ist allerdings schlechter als bei einem herkömmlichen Kühlschrank.
+Stirling-Motoren haben leider bisher nie den grossen Durchbruch erlangt, obwohl moderne Exemplare Wirkungsgrade von bis zu maximal 36% erreichen, äusserst zuverlässig arbeiten und es keine Rolle spielt, wie geheizt wird. Zudem arbeitet der Motor beinahe geräuschlos, weil weder Ventil- noch Ansaug- oder Auspuffgeräusche (s. Benzin-, Dieselmotoren und Dampfmaschine) vorhanden sind. In Kombination mit Sonnenenergie erlebt dieser Motor zur Zeit einen Aufschwung, da mit gebündelten Sonnenstrahlen der obere Teil des Zylinders einfach geheizt werden kann. Interessant ist der Motor auch bei umgekehrter Anwendung: Dreht man ihn von Hand, so läuft der oben beschriebene Prozess rückwärts. Dadurch erwärmt sich der Zylinder auf der einen Seite und kühlt sich auf der anderen Seite ab – wir haben ein einfaches Kühlsystem, das ohne schädliche Kältemittel auskommt! Der Wirkungsgrad ist allerdings schlechter als bei einem herkömmlichen Kühlschrank.
 
 == Frage
 
@@ -219,7 +218,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 
 === Der Kreisprozess für ideale Gase
 
-Bereits James #smallcaps[Watt] erkannte, dass bei Bemühungen um die Erhöhung des Wirkungsgrades von Dampfmaschinen nicht nur Experimente, sondern auch theoretische Überlegungen angestellt werden müssen. Ein Ingenieur im Dienste Napoleons, Sadi #smallcaps[Carnot] #text(number-type: "old-style")[(1796 – 1832)], konnte die Zustandsänderungen eines idealen Gases beschreiben, welche dieses in einem Kreisprozess vollführt.
+Schon James #smallcaps[Watt] war klar: Wer den Wirkungsgrad von Dampfmaschinen verbessern will, darf nicht nur ausprobieren, sondern muss die Vorgänge auch theoretisch durchdringen. Der französische Ingenieur Sadi #smallcaps[Carnot] #text(number-type: "old-style")[(1796 – 1832)] legte dafür einen Meilenstein: Er beschrieb erstmals, welche Zustandsänderungen ein ideales Gas in einem geschlossenen Kreisprozess durchmacht.
 
 #grid(
   columns: (1fr, auto),
@@ -253,7 +252,7 @@ Bereits James #smallcaps[Watt] erkannte, dass bei Bemühungen um die Erhöhung d
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    + Wir stellen uns zwei (sehr grosse) Kammern vor, welche nur durch ein, mit einem beweglichen Kolben verschlossenes, Rohr verbunden sind (s. Abb. 1). Der Druck in Kammer 1 sei $p$, in Kammer 2 sei der Druck #qty("0", "Pa") (Vakuum). Nun sollen Sie den Kolben um die Strecke $Delta s$ im Rohr in Richtung Kammer 1 verschieben, sodass das Volumen von Kammer 1 um $Delta V$ kleiner wird. Da Kammer 1 sehr gross ist, nehmen wir vereinfachend an, dass sich $p$ dabei nicht ändert.
+    + Wir stellen uns zwei (sehr grosse) Kammern vor, die nur durch ein, mit einem beweglichen Kolben verschlossenem Rohr verbunden sind (s. Abb. 1). Der Druck in Kammer 1 sei $p$, in Kammer 2 sei der Druck #qty("0", "Pa") (Vakuum). Nun sollen Sie den Kolben um die Strecke $Delta s$ im Rohr in Richtung Kammer 1 verschieben, sodass das Volumen von Kammer 1 um $Delta V$ kleiner wird. Da Kammer 1 sehr gross ist, nehmen wir vereinfachend an, dass sich $p$ dabei nicht ändert.
 
       Wie gross ist die in diesem Fall verrichtete Arbeit $W$ (ausgedrückt durch $Delta V$)? _Tipp: Benutzen Sie zuerst die Definition der Arbeit, bringen Sie dann die eine Grösse darin (Kraft $arrow(F)$) mit dem Druck in Zusammenhang und vereinfachen Sie!_
 
@@ -290,7 +289,7 @@ Nun kehren wir zu #smallcaps[Carnot] zurück. In Abbildung 3 ist ein Kreisprozes
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Wir starten dabei mit einem Gas im Zustand 1. Über Zustand 2 gelangen wir zu Zustand 3. Dabei wird vom Gas mechanische Arbeit (in der Abbildung rot dargestellt und wird unten von hellblau zugedeckt) verrichtet. Anschliessend geht es über Zustand 4 wieder zu Zustand 1, der dem Anfangszustand entspricht. Dieser zweite Teil braucht Energie (hellblau dargestellt). Weil aber die abgegebene Arbeit grösser ist, als die zugeführte Energie, bleibt nach einem Umlauf die Arbeit $W$ übrig. Es wird also vom Gas mehr mechanische Arbeit abgegeben, als von diesem bei der Kompression aufgenommen wird. Wie wir von der vorangehenden Seite wissen, entspricht die umrandete Fläche der abgegebenen Arbeit $W$, die man aus diesem Kreisprozess erhält.
+    Wir starten dabei mit einem Gas im Zustand 1. Über Zustand 2 gelangen wir zu Zustand 3. Dabei wird vom Gas mechanische Arbeit (in der Abbildung rot dargestellt und unten von hellblau zugedeckt) verrichtet. Anschliessend geht es über Zustand 4 wieder zu Zustand 1, der dem Anfangszustand entspricht. Dieser zweite Teil braucht Energie (hellblau dargestellt). Weil aber die abgegebene Arbeit grösser ist, als die zugeführte Energie, bleibt nach einem Umlauf die Arbeit $W$ übrig. Es wird also vom Gas mehr mechanische Arbeit abgegeben, als von diesem bei der Kompression aufgenommen wird. Wie wir bereits gesehen haben, entspricht die umrandete Fläche der abgegebenen Arbeit $W$, die man aus diesem Kreisprozess erhält.
   ],
   [
     #figure(
@@ -521,7 +520,7 @@ Nun folgt eine *isotherme Kompression*. Weil diese bei einer niedrigeren Tempera
 
 Es folgt eine *adiabatische Kompression*, die uns in den Ausgangszustand 1 zurück führt.
 
-Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h$] – #text(fuchsia)[$Q_n$]$ entzogen, die die Maschine in Arbeit $W$ umwandelt. Das Gas braucht Wärme aus einem Wärmereservoir der Temperatur #text(orange, $T_h$) und gibt Wärme an ein kälteres Wärmereservoir #text(orange, $T_n$) ab. Bei der Dampfmaschine, die #smallcaps[Carnot] damals verbessern wollte, handelte es sich bei den Wärmereservoirs um den Dampf im Dampfkessel und um die Kühlung auf der Dampfauslassseite, dem Kondensator.
+Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h$] – #text(fuchsia)[$Q_n$]$ entzogen, die die Maschine in Arbeit $W$ umwandelt. Das Gas braucht Wärme aus einem Wärmereservoir der Temperatur #text(orange, $T_h$) und gibt Wärme an ein kälteres Wärmereservoir #text(orange, $T_n$) ab. Die Dampfmaschine, die #smallcaps[Carnot] damals verbessern wollte, nutzte folgende Wärmereservoirs: Einerseits den heissen Dampf im Kessel und andererseits die Kühlung auf der Auslassseite, den Kondensator.
 
 == Frage
 
@@ -550,7 +549,7 @@ Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h
 
     Bei den Benzin-Motoren unterscheidet man zwischen dem 2-Takt- und dem 4-Takt-Motor, welcher auch #smallcaps[Otto]-Motor genannt wird.
 
-    N. #smallcaps[Otto] stellte seinen Verbrennungsmotor #text(number-type: "old-style")[1867 vor. 1883] wurde er von den Herren #smallcaps[Daimler] und #smallcaps[Benz] weiterentwickelt. Heute erreicht dieser Motor Wirkungsgrade von maximal 35%. Die Funktionsweise kann in vier Takte unterteilt werden. Drehen Sie das Modell (s. nebenstehende Abbildung) in die richtige Position, die dem Takt entspricht, an welchem Sie gerade am Lesen sind. Die folgende Abbildung veranschaulicht das im Text Beschriebene.
+    N. #smallcaps[Otto] stellte seinen Verbrennungsmotor #text(number-type: "old-style")[1867 vor. 1883] wurde er von den Herren #smallcaps[Daimler] und #smallcaps[Benz] weiterentwickelt. Heute erreicht dieser Motor Wirkungsgrade von maximal 35%. Die Funktionsweise kann in vier Takte unterteilt werden. Drehen Sie das Modell (s. nebenstehende Abbildung) in die Position, die dem Takt entspricht, den Sie gerade lesen. Die folgende Abbildung veranschaulicht das im Text Beschriebene.
   ],
   [
     #image("../bilder/viertaktmotor.png", width: 4cm)
@@ -568,8 +567,8 @@ Der Umgebung wird dabei Energie $#text(fuchsia)[$Delta Q$] = #text(fuchsia)[$Q_h
 2\. Takt: Nachdem der Kolben die unterste Position erreicht hat, schliesst das Einlassventil. Der Kolben bewegt sich nach oben und verdichtet das Gemisch. Das Volumen wird auf etwa einen Zehntel verkleinert, wodurch der Druck auf etwas mehr als #qty("22", "bar") ansteigt. Man spricht von einem Verdichtungsverhältnis von 10:1. Das Gemisch erreicht dabei etwa eine Temperatur von #qty("300", "Celsius") bis #qty("400", "Celsius"). Bei Temperaturen über #qty("500", "Celsius") würde sich das Benzin-Luft-Gemisch selbständig entzünden, was den Motor beschädigen kann (führt zu sogenanntem Klopfen).
 
 #text(
-  size: 8pt,
-)[Bei Benzinsorten unterscheidet man unterschiedliche Oktan-Zahlen. Je höher die Oktan-Zahl des Benzins, umso höher liegt die Temperatur, bei welcher sich das Benzin-Luft-Gemisch selbständig entzündet. Das heisst, dass Motoren mit höherem Verdichtungsverhältnis Benzin-Sorten mit grösserer Oktan-Zahl benötigen (Bsp.: Bleifrei 95 hat die Oktan-Zahl 95, Bleifrei 98 eine entsprechend höhere).]
+  size: 9pt,
+)[Bei Benzinsorten unterscheidet man unterschiedliche Oktan-Zahlen. Je höher die Oktan-Zahl des Benzins, desto höher liegt die Temperatur, bei welcher sich das Benzin-Luft-Gemisch selbständig entzündet. Das heisst, dass Motoren mit höherem Verdichtungsverhältnis Benzin-Sorten mit grösserer Oktan-Zahl benötigen (Bsp.: Bleifrei 95 hat die Oktan-Zahl 95, Bleifrei 98 eine entsprechend höhere).]
 
 3\. Takt: Ein Funken der Zündkerze entzündet das Gemisch, die Temperatur steigt auf über #qty("2500", "Celsius") und dadurch erhöht sich der Druck auf etwa #qty("60", "bar"). Der Kolben wird nach unten gedrückt (Arbeitstakt).
 
@@ -585,7 +584,7 @@ Die Funktionsweise kann in zwei Takte unterteilt werden:
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    1\. Takt: Der sich nach oben bewegende Kolben (s. Abb. a rechts) komprimiert das über ihm befindliche Gemisch. Gleichzeitig wird neues Gemisch durch den nun offenen Gaseinlass in das Kurbelgehäuse gesogen.
+    1\. Takt: Der sich nach oben bewegende Kolben (Abb. a) komprimiert das über ihm befindliche Gemisch. Gleichzeitig wird neues Gemisch durch den nun offenen Gaseinlass in das Kurbelgehäuse gesogen.
   ],
   [
     #image("../bilder/2takt.png", width: 9cm)
@@ -593,7 +592,9 @@ Die Funktionsweise kann in zwei Takte unterteilt werden:
 )
 
 
-2\. Takt: Das komprimierte Gemisch wird entzündet (s. Abb. b unten in der Mitte). Der entstehende grosse Druck presst den Kolben nach unten (Arbeitstakt). Das Gemisch im Kurbelgehäuse wird dadurch etwas zusammengepresst, kann aber nicht mehr zum Gaseinlass heraus, da dieser vom Kolben bald versperrt wird. Sobald der Kolben in der untersten Position ist, wird das Gemisch im Kurbelgehäuse durch den Überströmkanal in den Brennraum über den Kolben geleitet (s. Abb. c unten rechts). Gleichzeitig wird das verbrannte Gemisch durch das neu eintretende Gemisch zum Gasaustritt hinaus gedrückt. Aufgrund der etwas speziellen Formgebung des Kolbenoberteils tritt nur wenig frisches Gemisch direkt wieder zum Gasaustritt aus, allerdings lässt sich das bei Zwei-Taktern nicht verhindern, was man an den Abgasen riechen kann. Einspritz-Zweitakter haben diese Durchmischung zwar nicht, doch liessen sie sich nicht mit einem Dreiwegkatalysator betreiben bzw. haben eine geringere Leistung. Nun wird wieder beim 1. Takt begonnen.
+2\. Takt: Das komprimierte Gemisch wird entzündet (Abb. b). Der entstehende hohe Druck presst den Kolben nach unten, wodurch die eigentliche Arbeit verrichtet wird (Arbeitstakt). Bei dieser Abwärtsbewegung komprimiert der Kolben das Gemisch im Kurbelgehäuse leicht; ein Zurückströmen in den Gaseinlass wird durch die Kolbenwand verhindert. Sobald der Kolben seinen untersten Punkt erreicht, strömt das vorverdichtete Gemisch über den Überströmkanal in den Brennraum über dem Kolben (Abb. c). Gleichzeitig drückt das einströmende Frischgas das verbrannte Abgas durch den Auslass hinaus. Dank der speziellen Form des Kolbenbodens entweicht nur wenig unverbranntes Frischgas direkt in den Auspuff – ganz verhindern lässt sich dieser Verlust bei klassischen Zweitaktern jedoch nicht, was den typischen Abgasgeruch erklärt.
+
+Einspritz-Zweitakter vermeiden diese Gemischverluste zwar, erreichen jedoch eine geringere Leistung und lassen sich nicht mit einem Dreiwegkatalysator betreiben. Nach diesem Takt beginnt der Prozess wieder von vorn bei Takt 1.
 
 == Fragen
 
@@ -622,7 +623,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Das Demonstra
   [
     == Funktionsweise des Dieselmotors
 
-    In den Jahren zwischen #text(number-type: "old-style")[1892 und 1897] entwickelte R. #smallcaps[Diesel] den nach ihm benannten Verbrennungsmotor, der lange in Autos anteilsmässig hinter dem #smallcaps[Otto]-Motor zurückstand, aber gerade in letzter Zeit stark aufholt und in Lastwagen gar ausschliesslich zum Einsatz kommt. Die untenstehende Abbildung veranschaulicht das im Text beschriebene. In einem Druck-Volumen-Diagramm ($p$-$V$-Diagramm, s. nächste Seite) werden wir das Gas, welches sich im Zylinder befindet, während den 4-Takten "begleiten":
+    In den Jahren zwischen #text(number-type: "old-style")[1892 und 1897] entwickelte R. #smallcaps[Diesel] den nach ihm benannten Verbrennungsmotor, der in Autos anteilsmässig immer hinter dem #smallcaps[Otto]-Motor zurückstand und heute einen starken Rückgang erlebt, aber in Lastwagen praktisch ausschliesslich zum Einsatz kommt. Die untenstehende Abbildung veranschaulicht das im Text beschriebene. In einem Druck-Volumen-Diagramm ($p$-$V$-Diagramm, s. nächste Seite) werden wir das Gas, welches sich im Zylinder befindet, während den 4-Takten "begleiten":
 
     1\. Takt: Der Kolben ist oben und beginnt sich nach unten zu bewegen. In diesem Moment öffnet das Einlassventil und reine Luft wird in den Zylinder gesogen.
   ],
@@ -645,7 +646,7 @@ Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit ein
 
 == Fragen
 
-- Beantworten Sie diese Frage, falls Sie den Posten 4 (Benzin-Motoren) bereits absolviert haben. Der Dieselmotor hat einige Ähnlichkeiten mit dem #smallcaps[Otto]-Motor. Vergleichen Sie die beiden Motoren miteinander und stellen Sie Gemeinsamkeiten und Unterschiede zusammen. Was sind Vor- und Nachteile des einen gegenüber dem andern?
+- Beantworten Sie diese Frage, falls Sie den Posten 4 (Benzin-Motoren) bereits absolviert haben. Der Dieselmotor hat einige Ähnlichkeiten mit dem #smallcaps[Otto]-Motor. Vergleichen Sie die beiden Motoren miteinander und stellen Sie Gemeinsamkeiten und Unterschiede zusammen. Was sind Vor- und Nachteile?
 
 #schreibpapier(height: 2cm)
 
@@ -655,9 +656,9 @@ Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit ein
     columns: (1fr, auto),
     gutter: .5cm,
     [
-      - Bestimmen Sie die Arbeit $W$ (in J), die in einer rechteckigen Fläche des Gitternetzes in der Abbildung "steckt", indem Sie die Seitenlängen des Rechtecks bestimmen ($p$, $V$) und daraus die Arbeit $W$ als Produkt der beiden Grössen berechnen.
+      - Bestimmen Sie die Arbeit $W$ (in J), die in der markierten Fläche des Gitternetzes in der Abbildung "steckt", indem Sie die Seitenlängen des Rechtecks bestimmen ($p$, $V$) und daraus die Arbeit $W$ als Produkt der beiden Grössen berechnen.
 
-      - Schätzen Sie dann die Arbeit, die der Kolben während den vier Takten verrichtet, indem Sie die von der Kurve eingeschlossenen Fläche anhand des Gitters von Auge abschätzen.
+      - Schätzen Sie dann die Arbeit, die der Kolben während den vier Takten verrichtet, indem Sie die von der Kurve eingeschlossenen Fläche mit Hilfe des Gitters von Auge abschätzen.
 
       - Wie gross ist die Leistung eines 4-Zylinder-Motors, der mit 4200 Umdrehungen pro Minute arbeitet und das in der Abbildung dargestellte $p$-$V$-Diagramm aufweist? Wie gross ist das Hubvolumen (auch Hubraum genannt) dieses Motors?
     ],
@@ -710,8 +711,12 @@ Aufgrund des grossen Verdichtungsverhältnisses arbeitet der Dieselmotor mit ein
                 style: (stroke: haupt-farbe),
                 line: (type: "spline", tension: .5),
               )
+              plot.add-anchor("A", (250, 40))
+              plot.add-anchor("B", (300, 50))
             },
           )
+          rect("pV.A", "pV.B", name: "W")
+          content("W", $W$)
         })
       ]
     ],
@@ -743,9 +748,9 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Frage. Das Demonstrat
   [
     #text(
       number-type: "old-style",
-    )[Im Jahre 1957 brachte F. #smallcaps[Wankel] den ersten nach ihm benannten Kreiskolbenmotor zum Laufen, und 1964 wurde das erste Auto (ein NSU) serienmässig mit diesem Motor gebaut. Der Motor konnte sich allerdings nie richtig durchsetzen, auch wenn sich einige berühmte Automobilhersteller (Mercedes, Mazda) in der Zwischenzeit dem Motor widmeten und in einige ihrer Modelle einbauten.]
+    )[Im Jahre 1957 brachte F. #smallcaps[Wankel] den ersten nach ihm benannten Kreiskolbenmotor zum Laufen, und 1964 wurde das erste Auto (ein NSU) serienmässig mit diesem Motor gebaut. Der Motor konnte sich allerdings nie richtig durchsetzen, auch wenn sich einige berühmte Automobilhersteller (Mercedes, Mazda) dem Motor widmeten und in einige ihrer Modelle einbauten.]
 
-    Der Kolben, mit einer Form ähnlich derjenigen eines gleichseitigen Dreiecks mit geschwungenen Seiten, vollführt in einem trochoidenförmigen Gehäuse (s. Mathematik) eine stetig kreisende Bewegung. Seine Funktionsweise ist in der untenstehenden Abbildung dargestellt. In der Mathematik werden Sie vielleicht noch beliebige andere solche Formen kennenlernen, die allerdings allesamt komplizierter sind als die hier beschriebene und sich deshalb weniger für die Konstruktion eines Motors eignen.
+    Der Kolben, mit einer Form ähnlich derjenigen eines gleichseitigen Dreiecks mit geschwungenen Seiten, vollführt in einem trochoidenförmigen Gehäuse (s. Mathematik) eine stetig kreisende Bewegung. Seine Funktionsweise ist in der untenstehenden Abbildung dargestellt. In der Mathematik werden Sie noch beliebige andere solche Formen kennenlernen, die allerdings allesamt komplizierter sind als die hier beschriebene und sich deshalb weniger für die Konstruktion eines Motors eignen.
   ],
   [
     #image("../bilder/wankelmotor.png", width: 5cm)
@@ -759,7 +764,9 @@ Ein Java-Applet zum Ablauf der einzelnen Phasen finden Sie im Internet unter: ht
 
 == Frage
 
-- Beantworten Sie diese Frage erst dann, wenn Sie die Posten 4 (Benzinmotoren) und Posten 5 (Dieselmotor) bereits absolviert haben. Was sind Vor- und Nachteile des Wankel-Motors gegenüber dem Benzinmotor? Vergleichen Sie die Motoren miteinander und stellen möglichst viele Punkte zusammen. Überlegen Sie sich auch, was konstruktiv Probleme oder Vorteile sein könnten.
+- Beantworten Sie diese Frage erst dann, wenn Sie Posten 4 (Benzinmotoren) und Posten 5 (Dieselmotor) bereits absolviert haben. Was sind Vor- und Nachteile des Wankel-Motors gegenüber dem Benzinmotor? Vergleichen Sie die Motoren miteinander und stellen Sie möglichst viele Punkte zusammen.
+
+  Überlegen Sie sich auch, was die konstruktiven Probleme oder Vorteile sind.
 #schreibpapier()
 #grid(
   columns: 2,
@@ -786,17 +793,17 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 )
 
 == Rund ums Auto
-Bei der Wärmearbeitsmaschine handelt es sich eigentlich nur gerade um das Herz eines Autos. Damit dieses läuft, braucht es noch manches mehr.
+Bei der Wärmearbeitsmaschine handelt es sich eigentlich nur gerade um das Herz eines Autos. Damit dieses läuft, braucht es noch einiges mehr.
 
 Weil Benzin oder Diesel in flüssiger Form kaum brennt, muss dieses zuerst zusammen mit der zur Verbrennung benötigten Luft in gasförmigen Zustand gebracht werden. Bei Autos geschah dies früher mit einem *Vergaser*, der wie ein Parfumzerstäuber funktioniert. Motorräder haben noch heute die billigeren Vergaser, bei Autos hingegen kommen *elektronische Einspritzanlagen* zum Einsatz. Diese arbeiten genauer und lassen sich durch einen Computer steuern. Damit erreicht man sauberere Motoren und einen geringeren Verbrauch. Motoren mit *Katalysatoren* zur teilweisen Reinigung der Abgasluft von Schadstoffen (Kohlenmonoxid, Kohlenwasserstoffe, Stickoxide etc.) sind auf Einspritzanlagen angewiesen.
 
 Der Treibstoff wird von einer *Treibstoffpumpe* zum Motor geführt. Der Motor muss durch einen kleinen Elektromotor (*Anlasser*), der den Strom von der *Batterie* bezieht, in Betrieb gesetzt werden. Umgekehrt wandelt der *Alternator* mechanische Energie des Motors in elektrische Energie um (Generator) und lädt damit die Batterie auf. Damit Luft und Benzin keine Verschmutzungen in den Motor tragen, kommen *Luft- und Benzinfilter* zum Einsatz. Nach der Verbrennung können die Abgase über den *Auspuff* mit integriertem *Schalldämpfer* und den *Katalysator*, der die Abgase weitgehend von den giftigsten Stoffen befreit, entweichen.
 
-Weil die Reibung der Kolben an der Zylinderwand zu viel Wärme produzieren und den Motor beschädigen würde, muss der Motor geschmiert werden. Ein hauchdünner Ölfilm vermindert die Reibung wesentlich. Deshalb ist ein genügend hoher Ölstand sehr wichtig. Ohne *Öl* geht der Motor sehr rasch kaputt. Das Öl zirkuliert in einem eigenen Kreislauf mit Pumpe und *Kühler*.
+Weil die Reibung der Kolben an der Zylinderwand zu viel Wärme produziert und den Motor beschädigen würde, muss der Motor geschmiert werden. Ein hauchdünner Ölfilm vermindert die Reibung wesentlich. Deshalb ist ein genügend hoher Ölstand sehr wichtig. Ohne *Öl* geht der Motor rasch kaputt. Das Öl zirkuliert in einem eigenen Kreislauf mit Pumpe und *Kühler*.
 
-Weil Wärmearbeitsmaschinen sehr viel Abwärme produzieren, muss der Kühlung des Motors ein besonderes Augenmerk geschenkt werden. Früher wurden Motoren meistens mit Luft gekühlt, die bei Fahrt am Motor vorbeigelenkt wurde. Motorräder haben dieses Prinzip zum Teil noch heute (s. Titelbild Posten 4). Der Motor kann dabei gerne überhitzen und hat nur selten die optimale Betriebstemperatur. Deshalb verwendet man anstelle der Luftkühlung die Wasserkühlung. Dabei umstreicht das Kühlwasser, welches mit einem Frostschutzmittel gegen das Erstarren bei tiefen Temperaturen geschützt ist, die Zylinderwand. Durch ein Rohrsystem wird es im Kühler abgekühlt. Der Kühler wiederum nutzt den Fahrtwind, um die Wärme los zu werden. Reicht der Fahrtwind nicht aus, so erzeugt ein Ventilator zusätzlichen Wind zur Kühlung. Ein Thermostat schaltet diesen ein und aus.
+Wärmearbeitsmaschinen produzieren sehr viel Abwärme, deshalb ist die Kühlung des Motors essenziell. Früher wurden Motoren meistens mit Luft gekühlt, die bei Fahrt am Motor vorbeigelenkt wurde. Gewisse Motorräder haben dieses Prinzip heute noch. Der Motor kann dabei überhitzen und hat nur selten die optimale Betriebstemperatur. Deshalb verwendet man anstelle der Luftkühlung die Wasserkühlung. Dabei umfliesst das Kühlwasser, das mit einem Frostschutzmittel gegen das Erstarren bei tiefen Temperaturen geschützt ist, die Zylinderwand. Durch ein Rohrsystem wird es im Kühler abgekühlt. Der Kühler wiederum nutzt den Fahrtwind, um die Wärme los zu werden. Reicht der Fahrtwind nicht aus, so erzeugt ein Ventilator zusätzlichen Wind zur Kühlung. Ein Thermostat schaltet diesen ein und aus.
 
-Die Kraft des Motors wird über ein *Getriebe* auf die Räder gelenkt. Mit der *Kupplung* wird während dem Schalten der Motor von den Antriebsrädern kurzzeitig getrennt. Weil in Kurven das kurvenäussere Rad einen längeren Weg zurücklegen muss als das kurveninnere Rad, muss ein *Differentialgetriebe* zwischen die Antriebsräder gesetzt werden. Es verteilt die Bewegung im richtigen Mass auf die Antriebsräder.
+Die Kraft des Motors wird über ein *Getriebe* auf die Räder gelenkt. Mit der *Kupplung* wird der Motor während dem Schaltvorgang von den Antriebsrädern kurzzeitig getrennt. Weil in Kurven das kurvenäussere Rad einen längeren Weg zurücklegen muss als das kurveninnere Rad, muss ein *Differentialgetriebe* zwischen die Antriebsräder gesetzt werden. Es verteilt die Bewegung im richtigen Mass auf die Antriebsräder.
 
 == Aufgabe
 
@@ -831,11 +838,13 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 
 Der Kompressor (roter Pfeil) sitzt vor dem Motorblock und verdichtet die angesogene Luft. Angetrieben wird der Kompressor direkt vom Motor.
 
-Kompressoren und Turbolader kommen hauptsächlich in #smallcaps[Otto]- und Dieselmotoren zum Einsatz. Sie haben alle eines gemeinsam: Sie verdichten die Luft bereits vor dem Zylinder und erhöhen dadurch den Druck auf einige Bar. Öffnet sich nun das Einlassventil, so wird die Luft vom Kolben, der sich nach unten bewegt, nicht angesogen, sondern, aufgrund des erhöhten Drucks, in den Zylinder gepresst. Dadurch bringt man im Falle des Benzinmotors mehr Gemisch und im Falle des Dieselmotors mehr Luft in den Hubraum. Dies hat eine Leistungssteigerung zur Folge, die allerdings mit einem erhöhten Treibstoffbedarf einher geht. Weil die vor dem Zylinder komprimierten Gase jedoch eine höhere Temperatur aufweisen, können diese Gase im Zylinder nicht mehr gleich stark komprimiert werden wie ohne Kompressor, da sie sonst zu heiss werden und zu früh selbständig explodieren. Deshalb ist das Verdichtungsverhältnis etwas geringer als in Motoren ohne Kompressor (die häufig auch "Sauger" genannt werden). Etwas Abhilfe verschafft ein Ladeluftkühler, der die Luft nach dem Komprimieren und vor dem Zylinder von etwa #qty("200", "Celsius") auf #qty("40", "Celsius") abkühlt.
+Kompressoren und Turbolader kommen hauptsächlich in #smallcaps[Otto]- und Dieselmotoren zum Einsatz. Sie haben alle eines gemeinsam: Sie verdichten die Luft bereits vor dem Zylinder und erhöhen dadurch den Druck auf einige Bar. Öffnet sich nun das Einlassventil, so wird die Luft vom Kolben, der sich nach unten bewegt, nicht angesogen, sondern, aufgrund des erhöhten Drucks, in den Zylinder gepresst. Dadurch bringt man im Falle des Benzinmotors mehr Gemisch und im Falle des Dieselmotors mehr Luft in den Hubraum. Dies hat eine Leistungssteigerung zur Folge, die allerdings mit einem erhöhten Treibstoffbedarf einher geht. Weil die vor dem Zylinder komprimierten Gase eine höhere Temperatur aufweisen, können sie im Zylinder nicht mehr gleich stark komprimiert werden wie ohne Kompressor. Diese würden sonst zu heiss werden und zu früh selbständig explodieren. Deshalb ist das Verdichtungsverhältnis etwas geringer als in Motoren ohne Kompressor (die häufig auch "Sauger" genannt werden). Abhilfe verschafft ein Ladeluftkühler, der die Luft nach dem Komprimieren und vor dem Zylinder von etwa #qty("200", "Celsius") auf #qty("40", "Celsius") abkühlt.
 
-Von Kompressoren spricht man im allgemeinen dann, wenn der Verdichter mechanisch vom Motor selber angetrieben wird. Turbolader hingegen sind Aggregate, bei welchen die Abgase durch eine Turbine strömen und diese in Rotation versetzen. Ein auf der gleichen Welle sitzender Radialverdichter komprimiert die Frischluft. Turbinen nutzen somit den in den Abgasen verbliebene Druck. Turbolader haben den Nachteil, dass die Abgase erst bei höheren Motorendrehzahlen den nötigen Druck haben, damit der Turbolader den gewünschten Druck erzeugen kann. Dadurch wird vebrauchssteigerndes Fahren bei hohen Drehzahlen zum Teil notwendig. Moderne Turbomotoren arbeiten deshalb mit kleineren Turbinen, die wegen des geringeren Querschnitts bereits bei tiefen Drehzahlen höhere Drücke erzeugen. Bei höheren Drehzahlen öffnet dann ein Bypass (_waste gate_), der die Luft an der Turbine vorbei leitet, womit der Druck nicht mehr weiter ansteigt. Kompressoren, die mechanisch angetrieben sind, haben dieses Problem weniger, liefern also bereits bei tieferen Drehzahlen den nötigen Druck, fallen aber häufig durch viel Lärm auf.
+Von Kompressoren spricht man im allgemeinen dann, wenn der Verdichter mechanisch vom Motor selber angetrieben wird. Turbolader hingegen sind Aggregate, bei welchen die Abgase durch eine Turbine strömen und diese in Rotation versetzen. Ein auf der gleichen Welle sitzender Radialverdichter komprimiert die Frischluft. Turbinen nutzen somit den in den Abgasen verbliebene Druck. Turbolader haben den Nachteil, dass die Abgase erst bei höheren Motorendrehzahlen den gewünschten Druck erzeugen kann. Dadurch wird vebrauchssteigerndes Fahren bei hohen Drehzahlen notwendig. Moderne Turbomotoren arbeiten deshalb mit kleineren Turbinen, die wegen des geringeren Querschnitts bereits bei tiefen Drehzahlen höhere Drücke erzeugen. Bei höheren Drehzahlen öffnet sich dann ein Bypass (_waste gate_), der die Luft an der Turbine vorbei leitet, damit der Druck nicht weiter ansteigt. Bei Kompressoren, die mechanisch angetrieben sind, ist dieses Problem weniger ausgeprägt. Sie liefern bereits bei tieferen Drehzahlen den nötigen Druck. Dafür steigt die Lärmemission.
 
-Früher waren Kompressoren und Turbolader ein Zeichen für Sportlichkeit. Weil damalige Turbomotoren erst bei hohen Drehzahlen die gewünschte Motorenleistung erbrachten, wurde diese durch übermässigen Treibstoffkonsum erkauft, da hohe Drehzahlen eine Wirkungsgradabnahme verursachen. Heute ist man soweit, dass Turbolader dank technischer Ausgereiftheit durchaus den Wirkungsgrad des Motors steigern können und damit Sinn machen. So konnte z.B. das sogenannte Turboloch – die Zeit, die verstreicht, bis der Druck beim plötzlichen Gasgeben aufgebaut ist – weitgehend beseitigt werden. Zudem wird heute der Hubraum des Motors meistens absichtlich klein gewählt (z.B. beim Smart), damit die Leistung vernünftig ausfällt. Gerade bei Dieselmotoren ist dieses Konzept heute kaum mehr wegzudenken. Moderne Dieselmotoren verfügen alle über Abgasturbolader.
+Früher galten Kompressoren und Turbolader rein als Symbole für Sportlichkeit. Da damalige Turbomotoren erst bei hohen Drehzahlen ihre volle Leistung entfalteten, ging diese meist mit einem übermässigen Kraftstoffverbrauch einher – denn hohe Drehzahlen verschlechtern den Wirkungsgrad. Heute hingegen tragen moderne Turbolader gezielt dazu bei, die Effizienz des Motors zu steigern. So konnte beispielsweise das sogenannte Turboloch – die Verzögerung beim Ladedruckaufbau bei spontanem Gasgeben – technisch weitgehend eliminiert werden.
+
+Zudem ermöglicht die Aufladung heute das sogenannte Downsizing: Der Hubraum wird bewusst kleiner gewählt (wie etwa beim Smart), ohne dass man auf die nötige Leistung verzichten muss. Gerade bei Dieselmotoren ist dieses Konzept inzwischen Standard – moderne Dieselmotoren sind praktisch ausnahmslos mit Abgasturboladern ausgerüstet.
 
 
 == Fragen
@@ -870,7 +879,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Das Kühlschr
 
 == Funktionsweise des Kühlschranks
 
-Finden Sie durch Berühren heraus, was beim Kühlschrankmodell dem in der Folge beschriebenen entspricht.
+Ertasten Sie am Kühlschrankmodell, welche Komponenten den nachfolgend beschriebenen Bauteilen entsprechen.
 
 #grid(
   columns: (auto, 1fr),
@@ -883,22 +892,22 @@ Finden Sie durch Berühren heraus, was beim Kühlschrankmodell dem in der Folge 
   ],
 )
 
-Dadurch erwärmt sich das Kältemittel auf #qty("2", "Celsius"), wobei es verdampft (der Siedepunkt des Kältemittels beträgt in diesem Teil des Kreislaufs, in welchem der Druck bei ca. #qty("2", "bar") liegt, bei #qty("-10", "Celsius")), die Luft kühlt sich dabei von #qty("10", "Celsius") auf #qty("5", "Celsius") ab. Das verdampfte, #qty("2", "Celsius") warme Gas wird in einem Kompressor, der von einem Elektromotor angetrieben wird, verdichtet. Dabei steigt auch die Temperatur des Gases (s. Gasgesetze). Der Druck im linken Teil des Kältemittelkreislaufs ist mit 8 bar deutlich angestiegen. Im zweiten Wärmetauscher kommt das warme Gas mit der Aussenluft in Kontakt, welche sich dadurch von erwärmt. Das Gas kühlt sich auf #qty("50", "Celsius") ab und kondensiert dabei (der Siedepunkt des Kältemittels beträgt in diesem Teil des Kreislaufs, in welchem der Druck bei #qty("8", "bar") liegt, bei #qty("60", "Celsius")). Das flüssige Kältemittel gelangt durch ein Druckreduzierventil, wodurch es sich von #qty("50", "Celsius") auf #qty("-20", "Celsius") abkühlt. Der Kreislauf beginnt von vorne.
+Dadurch erwärmt sich das Kältemittel auf #qty("2", "Celsius"), wobei es verdampft (der Siedepunkt des Kältemittels beträgt in diesem Teil des Kreislaufs, in welchem der Druck bei ca. #qty("2", "bar") liegt, bei #qty("-10", "Celsius")), die Luft kühlt sich dabei von #qty("10", "Celsius") auf #qty("5", "Celsius") ab. Das verdampfte, #qty("2", "Celsius") warme Gas wird in einem Kompressor, der von einem Elektromotor angetrieben wird, verdichtet. Dabei steigt auch die Temperatur des Gases (siehe Gasgesetze). Der Druck im linken Teil des Kältemittelkreislaufs ist mit #qty("8", "bar") deutlich angestiegen. Im zweiten Wärmetauscher kommt das warme Gas mit der Aussenluft in Kontakt, die sich dadurch erwärmt. Das Gas kühlt sich auf #qty("50", "Celsius") ab und kondensiert dabei (der Siedepunkt des Kältemittels beträgt in diesem Teil des Kreislaufs #qty("60", "Celsius")). Das flüssige Kältemittel strömt durch ein Druckreduzierventil und kühlt sich dabei von #qty("50", "Celsius") auf #qty("-20", "Celsius") ab. Der Kreislauf beginnt von vorne.
 
 #grid(
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Als Kühlmittel kamen früher Fluor-Chlor-Kohlenwasserstoffe (FCKW) und Ammoniak zum Einsatz. Beide haben einen tiefen Siedepunkt, eine Voraussetzung für ein Kältemittel. Die ersteren sind zwar nicht brennbar, ungiftig für den Menschen und geruchlos, doch zerstören sie die Ozonschicht und verstärken den Treibhauseffekt. Ammoniak hat neben gewissen Vorteilen auch negative Aspekte, so ist es giftig und brennbar. Heute verwendet man meist gewöhnliche Kohlenwasserstoffe. Man erreicht damit zwar nicht ganz so tiefe Temperaturen, doch zerstören sie die Ozonschicht nicht und sind nicht giftig.
+    Als Kühlmittel kamen früher Fluor-Chlor-Kohlenwasserstoffe (FCKW) und Ammoniak zum Einsatz. Beide haben einen tiefen Siedepunkt, eine Voraussetzung für ein Kältemittel. Die FCKW sind zwar nicht brennbar, für den Menschen unbedenklich und geruchlos, doch zerstören sie die Ozonschicht und verstärken den Treibhauseffekt. Ammoniak hat den Nachteil, das es giftig und brennbar ist. Heute verwendet man meist gewöhnliche Kohlenwasserstoffe. Damit erreicht man zwar nicht ganz so tiefe Temperaturen, doch zerstören sie die Ozonschicht nicht und sind nicht giftig.
   ],
   [
-    #image("../bilder/kühlschrank.jpg", width: 5cm)
+    #image("../bilder/kühlschrank.jpg", width: 7cm)
   ],
 )
 
 == Tipp
 
-Falls Sie einmal auch ohne Kühlschrank Glace herstellen wollen, dann können Sie dies wie folgt tun: Nehmen Sie zwei Schüsseln, eine grössere und eine kleinere, wobei die kleinere gut in die grössere hineingestellt werden kann. Füllen Sie die grössere Schüssel mit viel zerstossenem Eis und wenig Wasser, damit #qty("0", "Celsius") kaltes Eiswasser entsteht. Geben Sie pro Kilogramm Eiswasser #qty("30", "g") bis #qty("50", "g") Kochsalz dazu und mischen Sie gut. Nun können Sie in die kleine Schüssel Ihre vorbereitete Glacemischung geben. Rühren Sie regelmässig, bis diese gefroren ist. Der Grund, dass die Glacemischung fest wird, liegt daran, dass Salzwasser bis einige Grade unter #qty("0", "Celsius") flüssig bleibt. Das Auflösen des Salzes braucht Energie, welche dem Eiswasser entzogen wird und dieses dadurch abkühlt.
+Falls Sie ohne Kühlschrank einmal Glace herstellen wollen, können Sie dies wie folgt tun: Nehmen Sie zwei Schüsseln, eine grössere und eine kleinere, wobei die kleinere gut in die grössere hineingestellt werden kann. Füllen Sie die grössere Schüssel mit viel zerstossenem Eis und wenig Wasser, damit #qty("0", "Celsius") kaltes Eiswasser entsteht. Geben Sie pro Kilogramm Eiswasser ca. #qty("50", "g") Kochsalz dazu und mischen Sie gut. Nun können Sie in die kleine Schüssel Ihre vorbereitete Glacemischung geben. Rühren Sie regelmässig, bis diese gefroren ist. Die Glacemischung wird fest, weil das Salzwasser bis einige Grade unter #qty("0", "Celsius") flüssig bleibt. Das Auflösen des Salzes aber braucht Energie, die dem Eiswasser entzogen wird und dieses dadurch abkühlt.
 
 == Frage
 
@@ -919,7 +928,7 @@ Falls Sie einmal auch ohne Kühlschrank Glace herstellen wollen, dann können Si
 
 Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen Posten benötigen Sie 10 Minuten.
 
-== Das einfache Prinzip einer Dampfturbine:
+== Das einfache Prinzip einer Dampfturbine
 
 #grid(
   columns: (5cm, auto),
@@ -940,7 +949,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
   ],
 )
 
-Mittlerweile hat sich die Dampfmaschine als Arbeitsmaschine verabschiedet. In grossen Kraftwerken jedoch hat sich der Dampf als Arbeitsmedium weiterhin behaupten können. So wird in Wärmekraftwerken, zu welchen unter anderem Kernkraftwerke, Kohlekraftwerke und Ölkraftwerke zählen, auf jeweils unterschiedliche Art Wasser zum Verdampfen gebracht. Der grosse Druck des Dampfes wird in all diesen Kraftwerkstypen dazu genutzt, um eine Dampfturbine (s. Abb. 1 und 2) in Rotation zu versetzen. In Kraftwerken sind dabei mehrere, solche Turbinen hintereinander geschaltet. Zuerst passiert der Dampf die Hochdruckturbine, danach die Niederdruckturbinen. Wichtig ist hier (analog zur Dampfmaschine), dass der Dampf hinter den Turbinen in einem Kondensator gekühlt wird. Das heisst, in einem "Kühler" wird der Dampf abgekühlt, wobei dieser kondensiert. Damit sinkt der Druck auf der Turbinenrückseite zusätzlich. Dies geschieht häufig mittels eines Kühlturms oder mit einer Kühlung in einem grossen, nahe gelegenen Fluss. Nur ein grosser Druckunterschied zwischen Turbinenvorder- und -rückseite erlaubt einen akzeptablen Wirkungsgrad. Der Wirkungsgrad solcher Kraftwerke liegt heute bei etwas über 40%.
+Mittlerweile hat sich die Dampfmaschine als Arbeitsmaschine verabschiedet. In grossen Kraftwerken jedoch hat sich der Dampf als Arbeitsmedium weiterhin behaupten können. So wird in Wärmekraftwerken, zu welchen unter anderem Kernkraftwerke, Kohlekraftwerke und Ölkraftwerke zählen, auf jeweils unterschiedliche Art Wasser zum Verdampfen gebracht. Der grosse Druck des Dampfes wird in all diesen Kraftwerkstypen dazu genutzt, um eine Dampfturbine (s. Abb. 1 und 2) in Rotation zu versetzen. In Kraftwerken sind mehrere Turbinen hintereinander geschaltet. Zuerst passiert der Dampf die Hochdruckturbine, danach die Niederdruckturbinen. Wichtig ist hier (analog zur Dampfmaschine), dass der Dampf hinter den Turbinen in einem Kondensator gekühlt wird. In einem "Kühler" wird der Dampf abgekühlt, wobei dieser kondensiert. Damit sinkt der Druck auf der Turbinenrückseite zusätzlich. Dies geschieht häufig mittels eines Kühlturms oder mit einer Kühlung in einem grossen, nahe gelegenen Fluss. Nur ein grosser Druckunterschied zwischen Turbinenvorder- und -rückseite erlaubt einen akzeptablen Wirkungsgrad. Der Wirkungsgrad solcher Kraftwerke liegt heute bei etwas über 40%.
 
 #pagebreak()
 
@@ -975,7 +984,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Das Prinzip des Raketentriebwerks ist sehr einfach, wenn nicht schon fast primitiv. Durch eine Verbrennung, welche möglichst viel Energie freisetzen soll, entstehen sehr hohe Temperaturen in einem Raum und damit eine sehr starke thermische, ungeordnete Molekularbewegung der Teilchen des Gases. Öffnet man den Raum, indem die Verbrennungsreaktion abläuft, nur zu einer Seite, so wandelt sich die ungeordnete in teilweise geordnete Bewegung um (s. Abbildung). Die gewaltige freigesetzte Energie lässt keine Defekte am Mantel des Raumes zu, denn schnell kann es zu einer Explosion – und dann in alle Richtungen - kommen!
+    Das Prinzip des Raketentriebwerks ist sehr einfach, wenn nicht schon fast primitiv. Durch eine Verbrennung, welche möglichst viel Energie freisetzen soll, entstehen sehr hohe Temperaturen in einem Raum und damit eine sehr starke thermische, ungeordnete Molekularbewegung der Teilchen des Gases. Öffnet man den Raum, in dem die Verbrennungsreaktion abläuft, zu einer Seite hin, so wandelt sich die ungeordnete in teilweise geordnete Bewegung um (s. Abbildung) und strömt durch diese hinaus. Alle anderen Seiten müssen dabei dicht bleiben, da das Gas ansonsten unkontrolliert entweicht (= Explosion).  
   ],
   [
     #image("../bilder/rakete.jpg", width: 4cm)
@@ -1073,7 +1082,9 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
   [
     #text(
       number-type: "old-style",
-    )[Raketen sind wohl die ältesten Wärmearbeitsmaschinen überhaupt, so sollen bereits die Araber 1288 die spanische Stadt Valencia mit Raketen angegriffen haben. Es ist aber nicht ganz einfach, eine Rakete kontrolliert zu steuern. Erst dem nationalsozialistischen Deutschland gelang es mit enormen Forschungsgeldern unter der Führung von Wernher #smallcaps[von Braun] eine militärische Grossrakete, die V2, zu entwickeln. Die Sowjets waren, allerdings erst nach dem 2. Weltkrieg, ebenfalls erfolgreich im Entwickeln einsatzfähiger Raketen, selbst für Flüge ins Weltall. Einzig den USA gelang dies lange Zeit nicht, so endeten enorm viele Versuche mit schauerhaften Explosionen. Erst unter der Hilfe von #smallcaps[von Braun], der nach dem Krieg nach den USA gebracht wurde, kamen auch diese besser voran. Dennoch klappte es mit einem Flug in den Weltraum, der den Sowjets 1957 mit dem Sputnik bereits gelungen war, nicht nach Plan. Als John #smallcaps[Glenn] als erster Amerikaner mit der höchst unzuverlässigen Atlas-Trägerrakete 1962 in den Weltraum geschossen wurde, kam das geglückte Abenteuer beinahe einem Wunder gleich, denn zuvor waren zwei von drei Atlas-Tests missglückt. Der vierte mit #smallcaps[Glenn] an Bord war erstaunlicherweise ein Erfolg.]
+    )[Raketen gehören zu den ältesten Wärmekraftmaschinen überhaupt. Bereits im Jahr 1288 sollen die Araber die spanische Stadt Valencia mit Raketen angegriffen haben. Die kontrollierte Steuerung dieser Flugkörper erwies sich jedoch lange als Herausforderung. Erst im Nationalsozialismus gelang es unter hoher finanzieller Förderung und der technischen Leitung von Wernher #smallcaps[von Braun], mit der V2 die erste einsatzfähige Grossrakete zu entwickeln.
+
+    Nach dem Zweiten Weltkrieg erzielte auch die Sowjetunion rasche Erfolge bei der Entwicklung von Trägerraketen bis hin zu den ersten Weltraumflügen. Den USA hingegen widerfuhren lange Zeit schwere Rückschläge; zahlreiche Versuche endeten in spektakulären Explosionen. Erst durch die Mithilfe von #smallcaps[Braun], der nach Kriegsende in die USA gebracht worden war, machte das US-Raumfahrtprogramm entscheidende Fortschritte. Dennoch blieb der Rückstand auf die Sowjets, die bereits 1957 mit Sputnik den Weg ins All geebnet hatten, enorm. Als John #smallcaps[Glenn] 1962 als erster Amerikaner eine Erdumlaufbahn erreichte, glich dies fast einem Wunder: Die verwendete Atlas-Trägerrakete galt als äusserst unzuverlässig, nachdem zuvor zwei von drei Testflügen fehlgeschlagen waren. Der vierte Versuch mit #smallcaps[Glenn] an Bord gelang jedoch.]
 
   ],
 )
@@ -1083,9 +1094,9 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 
 #set math.equation(numbering: "(1)")
 
-Mit Hilfe des Diagramms (vorherige Seite) werden wir berechnen können, wie hoch der maximale Wirkungsgrad einer Rakete überhaupt sein kann. Ob man diesen Wert dann auch tatsächlich erreicht, hängt davon ab, wie gut die Rakete gebaut wird.
+Mit Hilfe des Energiestrom-Diagramms (vorherige Seite) werden wir berechnen können, wie hoch der maximale Wirkungsgrad einer Rakete sein kann. Ob man diesen Wert dann auch tatsächlich erreicht, hängt davon ab, wie gut die Rakete gebaut wird.
 
-Das Diagramm kann so verstanden werden: Eine Wärmearbeitsmaschine nutzt die innere Energie $U_1$ eines heissen Gases aus und wandelt einen Teil davon in Arbeit $W$ um. Die Abgase, die die Maschine nicht weiter nutzen kann, stösst diese wieder aus. Die Abgase haben eine innere Energie $U_2$.
+Das Diagramm lässt sich wie folgt interpretieren: Eine Wärmearbeitsmaschine nutzt die innere Energie $U_1$ eines heissen Gases aus und wandelt einen Teil davon in Arbeit $W$ um. Die Abgase, die die Maschine nicht weiter nutzen kann, stösst sie wieder aus. Die Abgase haben eine innere Energie $U_2$.
 
 Ein heisses Gas befinde sich in der Rakete. Das Gas besteht aus $N$ Teilchen und hat die Temperatur $T_1$. Damit ergibt sich für die innere Energie $U_1$ des Gases:
 
@@ -1104,13 +1115,14 @@ Im zweiten Schritt wurde @arbeit eingesetzt. Setzen wir die @gas in @hauptsatz e
 
 $ 3/2 N k T_1 = 3/2 N k T_2 + eta N k T_1 $
 
-Lösen Sie diese Gleichung nun nach dem Wirkungsgrad $eta$ auf:#h(1fr)
+Lösen Sie diese Gleichung nun nach dem Wirkungsgrad $eta$ auf: #h(1fr)
 #box(
   stroke: haupt-farbe + .5pt,
   inset: 18pt,
   radius: 4pt,
+  baseline: 40%,
 )[
-  $ eta_"theor" = "                              " $
+  $ eta_"theor" = "                            " $
 ]
 
 
@@ -1145,7 +1157,7 @@ Lösen Sie diese Gleichung nun nach dem Wirkungsgrad $eta$ auf:#h(1fr)
 
 #lernziele[
   An diesem Posten erfahren Sie
-  - weshalb gerade diese Wärmearbeitsmaschine bei schnellen Flugzeugen zum Einsatz gelangt.
+  - weshalb gerade Düsentriebwerke bei schnellen Flugzeugen zum Einsatz kommen.
   - wie gut ein Düsentriebwerk die ihm zur Verfügung gestellte Energie ausnutzen kann.
 ]
 
@@ -1159,7 +1171,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
   columns: (1fr, auto),
   gutter: .5cm,
   [
-    Das Düsentriebwerk kommt vorwiegend bei schweren und schnellen Flugzeugen zum Einsatz, da der Wirkungsgrad eines Propellers bei Geschwindigkeiten nahe der Schallgeschwindigkeit (ca. #qty("330", "m/s")) stark abnimmt und herkömmliche Motoren bei grossem Leistungsbedarf zu schwer werden. Der Wirkungsgrad eines Düsentriebwerks steht allerdings jenem eines Motors in jedem Fall nach, er erreicht nur knapp 25%.
+    Das Düsentriebwerk kommt vorwiegend bei schweren und schnellen Flugzeugen zum Einsatz, da der Wirkungsgrad eines Propellers bei Geschwindigkeiten nahe der Schallgeschwindigkeit (ca. #qty("330", "m/s")) stark abnimmt und herkömmliche Motoren bei grossem Leistungsbedarf zu schwer werden. Der Wirkungsgrad eines Düsentriebwerks steht allerdings jenem eines anderen Motors nach, er erreicht nur knapp 25%.
   ],
   [
     #image("../bilder/düsentriebwerk.jpg", width: 10cm)
@@ -1168,7 +1180,7 @@ Lesen Sie den folgenden Text durch und beantworten Sie die Fragen. Für diesen P
 
 == Funktionsweise
 
-Ein Nieder- und ein Hochdruckkompressor (oder Verdichter) am Einlass des Triebwerks, bestehend aus mehreren rotierenden und festen Verdichterlaufrädern, presst die einströmende Luft in die Brennkammern, in welchen Treibstoff verbrannt wird und sich die Luft dadurch schlagartig erwärmt. Die erhitzte Luft wird wegen der grossen Volumenzunahme nach hinten beschleunigt und treibt dabei die eigentliche Turbine (bestehend aus Hoch- und Niederdruckturbine) an, welche wiederum die auf der gleichen Welle montierten Nieder- und Hochdruckkompressoren vorne antreibt. Der schnelle Luftstrom verlässt dann das Triebwerk nach hinten und drückt dadurch das Triebwerk (und alles, was daran festgemacht ist) nach vorne.
+Am Einlass des Triebwerks komprimieren ein Nieder- und ein Hochdruckverdichter – jeweils aufgebaut aus rotierenden und feststehenden Schaufelrädern – die einströmende Luft und leiten sie in die Brennkammern. Dort wird Treibstoff eingespritzt und verbrannt, woraufhin sich die Luft schlagartig erwärmt. Durch die enorme Ausdehnung beschleunigt der heisse Gasstrom nach hinten und treibt dabei die Turbine an. Diese besteht aus einer Hoch- und Niederdruckturbine, die über eine gemeinsame Welle die Verdichter im vorderen Teil antreiben. Schliesslich tritt der schnelle Luftstrahl hinten aus dem Triebwerk aus und erzeugt so nach dem Rückstossprinzip den Vortrieb.
 
 == Fragen
 - Weshalb werden Autos nicht mit Düsentriebwerken angetrieben?
