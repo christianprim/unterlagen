@@ -34,7 +34,7 @@
 - Überlegen Sie sich auch, wie der gezeichnete Verlauf des magnetischen Flusses zustande kommen könnte. Beschreiben Sie eine Möglichkeit ausführlich.
 
 == 3. Eine Spule wird durch das Magnetfeld gezogen
-Durch ein Magnetfeld konstanter Flussdichte ($#text(fill: aqua)[$B$]=qty("5e-5", "Tesla")$) wird eine Rechteckspule (1000 Windungen, alle Seiten $qty("20", "cm")$} lang) mit konstanter Geschwindigkeit $#text(fill: blue)[$v$]=qty("10", "cm/s")$ gezogen. Zu Beginn befindet sich die Spule vollständig ausserhalb des Magnetfeldes (Abbildung 1). Am Schluss verlässt sie das Magnetfeld wieder vollständig (Abbildung 3).
+Durch ein Magnetfeld konstanter Flussdichte ($#text(fill: aqua)[$B$]=qty("5e-5", "Tesla")$) wird eine Rechteckspule (1000 Windungen, alle Seiten $qty("20", "cm")$ lang) mit konstanter Geschwindigkeit $#text(fill: blue)[$v$]=qty("10", "cm/s")$ gezogen. Zu Beginn befindet sich die Spule vollständig ausserhalb des Magnetfeldes (Abbildung 1). Am Schluss verlässt sie das Magnetfeld wieder vollständig (Abbildung 3).
 #grid(
   columns: (1fr, 1fr, 1fr),
   align: center,
