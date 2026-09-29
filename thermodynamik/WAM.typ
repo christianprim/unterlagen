@@ -1113,7 +1113,7 @@ $ U_1 = U_2 + W = U_2 + eta U_1 $ <hauptsatz>
 Im zweiten Schritt wurde @arbeit eingesetzt. Setzen wir die @gas in @hauptsatz ein, so folgt:
 #set math.equation(numbering: none)
 
-$ 3/2 N k T_1 = 3/2 N k T_2 + eta N k T_1 $
+$ 3/2 N k T_1 = 3/2 N k T_2 + eta 3/2 N k T_1 $
 
 Lösen Sie diese Gleichung nun nach dem Wirkungsgrad $eta$ auf: #h(1fr)
 #box(
