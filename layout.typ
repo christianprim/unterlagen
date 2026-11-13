@@ -1,5 +1,5 @@
 #import "@preview/showybox:2.0.4": showybox
-#import "@preview/zap:0.5.0" as zap
+#import "@preview/zap:0.6.0" as zap
 #import "@preview/cetz:0.5.2" as cetz
 #import "@preview/unify:0.7.1": add-unit, num, qty, unit
 #import "@preview/cetz-plot:0.1.4" as cetz-plot
@@ -131,39 +131,10 @@
 #let beige = rgb("#cfb997")
 
 
-// eigene Komponenten für Zap
-#let lamp(name, node, ..params) = {
-  let draw(ctx, position, style) = {
-    zap.interface((-style.radius, -style.radius), (style.radius, style.radius), io: position.len() < 2)
-    cetz.draw.circle((0, 0), radius: style.radius, ..style)
-    cetz.draw.line((135deg, style.radius), (-45deg, style.radius), ..style)
-    cetz.draw.line((45deg, style.radius), (-135deg, style.radius), ..style)
-  }
-
-  // Component call
-  zap.component("lamp", name, node, draw: draw, ..params)
-}
-
-#let battery(name, node, ..params) = {
-  let draw(ctx, position, style) = {
-    zap.interface(
-      (-style.distance / 3, -style.width / 2),
-      (style.distance / 3, style.width / 2),
-      io: position.len() < 2,
-    )
-
-    let plates() = {
-      cetz.draw.line((-style.distance / 3, style.width / 4), (-style.distance / 3, -style.width / 4))
-      cetz.draw.line((style.distance / 3, -style.width / 2), (style.distance / 3, style.width / 2))
-    }
-
-    cetz.draw.set-style(stroke: style.stroke)
-    plates()
-  }
-
-  // Component call
-  zap.component("capacitor", name, node, draw: draw, ..params)
-}
+// offizielle Zap-Symbole
+// Die Lampe wird unverändert übernommen, die Batterie fest auf eine Zelle gesetzt.
+#let lamp = zap.lamp
+#let battery = zap.battery.with(cells: 1)
 
 #let toggle-switch(name, node, ..params) = {
   assert(params.pos().len() == 0, message: "ground supports only one node")
@@ -179,27 +150,39 @@
     cetz.draw.line("in", "out1", stroke: style.stroke)
   }
 
-  // Component call
-  zap.component("toggle-switch", name, node, draw: draw, ..params, label: none)
+  // Symbol call
+  zap.symbol("toggle-switch", name, node, draw: draw, ..params, label: none)
 }
 
 #let init-zap = cetz.draw.set-ctx(ctx => {
-  ctx.zap.style.insert("lamp", (
-    scale: auto,
-    stroke: auto,
-    radius: .47cm,
-  ))
-  ctx.zap.style.insert("battery", (
-    scale: auto,
-    stroke: auto,
-    radius: .47cm,
-  ))
-  ctx.zap.style.insert("toggle-switch", (
-    scale: auto,
-    stroke: auto,
-    width: .8,
-    angle: 35deg,
-  ))
+  // Bisherige Grössen beibehalten, aber die offiziellen Zap-Symbole verwenden.
+  ctx.style.zap.insert(
+    "lamp",
+    cetz.styles.merge(ctx.style.zap.at("lamp", default: (:)), (
+      scale: auto,
+      stroke: auto,
+      radius: .47cm,
+    )),
+  )
+  ctx.style.zap.insert(
+    "battery",
+    cetz.styles.merge(ctx.style.zap.at("battery", default: (:)), (
+      scale: auto,
+      stroke: auto,
+      distance: .17,
+      plus-width: .8,
+      minus-width: .4,
+    )),
+  )
+  ctx.style.zap.insert(
+    "toggle-switch",
+    cetz.styles.merge(ctx.style.zap.at("toggle-switch", default: (:)), (
+      scale: auto,
+      stroke: auto,
+      width: .8,
+      angle: 35deg,
+    )),
+  )
   ctx
 })
 
@@ -213,6 +196,7 @@
       stroke: red,
     ),
     voltage: (
+      symbol: none,
       stroke: blue,
       start: (-.3, .0),
       end: (.3, .0),
@@ -224,7 +208,7 @@
 #let circuit(init: zap-style, doc) = zap.circuit({
   import zap: *
   init-zap
-  zap.set-style(..init)
+  cetz.draw.set-style(zap: init)
 
   doc
 })

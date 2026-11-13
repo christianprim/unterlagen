@@ -77,9 +77,9 @@ Ein Ende jeder Induktionsspule wird zu einem gemeinsamen Neutralleiter (#text(fi
   gutter: .5cm,
   [
     #circuit({
-      import zap: *
+      import zap: node, resistor
 
-      set-style(scale: (x: .5, y: .5))
+      cetz.draw.set-style(zap: (scale: (x: .5, y: .5)))
       
       node("sternpunkt", (0, 0), stroke: blue, fill: false, label: (content: text(fill: blue)[$N$], anchor: "east"))
       node("l1", (-180deg, 2), stroke: brown, fill: false, label: (content: text(fill: brown)[$L_1$], anchor: "west"))
@@ -107,10 +107,10 @@ In einer _Dreieckschaltung_ werden die Lasten direkt zwischen zwei Aussenleitern
 
 #align(center)[
   #circuit({
-    import zap: *
+    import zap: node, resistor
     import cetz-plot: *
 
-    set-style(scale: (x: .5, y: .5))
+    cetz.draw.set-style(zap: (scale: (x: .5, y: .5)))
 
     // Schaltschema
       node("l1", (-180deg, 2), stroke: brown, fill: false, label: (content: text(fill: brown)[$L_1$], anchor: "west"))

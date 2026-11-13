@@ -32,14 +32,14 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   //row-gutter: 2em,
   [
     #circuit({
-      import zap: *
+      import zap: wire
 
       wire((0, 0), (4, 0))
     })
   ],
   [
     #circuit({
-      import zap: *
+      import zap: wire
 
       wire((0, 0), (4, 0))
       wire((2, -.5), (2, .5))
@@ -47,7 +47,7 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   ],
   [
     #circuit({
-      import zap: *
+      import zap: node, wire
 
       node("a", (2,0))
       wire((0, 0), (4, 0))
@@ -56,15 +56,14 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   ],
   [
     #circuit({
-      import zap: *
-      
+      // offizielle Zap-Lampe aus layout.typ
       lamp("b", (0, 0), (4, 0))
     })
   ],
   align(top)[Leitung], [Kreuzung ohne \ Kontakt], [Kreuzung mit \ Kontakt], align(top)[Lämpchen],
   [
     #circuit({
-      import zap: *
+      import zap: switch
 
       switch("s", (0, 0), (4, 0))
     })
@@ -72,8 +71,9 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   ],
   [
     #circuit({
-      import zap: *
-      
+      import zap: wire
+
+      // custom toggle-switch from layout.typ
       toggle-switch("s", (2, 0))
       wire("s.in", (0, 0))
       wire("s.out1", (rel: (1.6, 0)))
@@ -82,8 +82,7 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   ],
   [
     #circuit({
-      import zap: *
-      
+      // offizielle Zap-Batterie, fest auf eine Zelle gesetzt
       battery("bat", (0, 0), (4, 0))
     })
   ], [],
@@ -103,8 +102,8 @@ Die einzelnen Schaltschemen bilden die einzigen zu protokollierenden Daten. Zeic
     gutter: .5cm,
     [
       #circuit({
-        import zap: *
-  
+        import zap: switch, wire
+
         battery("b", (0, -1), (0, 1))
         switch("s", "b.out", (3, 1))
         lamp("l", "s.out", (3, -1))
