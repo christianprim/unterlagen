@@ -56,7 +56,8 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   ],
   [
     #circuit({
-      // offizielle Zap-Lampe aus layout.typ
+      import zap: lamp
+
       lamp("b", (0, 0), (4, 0))
     })
   ],
@@ -73,7 +74,6 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
     #circuit({
       import zap: wire
 
-      // custom toggle-switch from layout.typ
       toggle-switch("s", (2, 0))
       wire("s.in", (0, 0))
       wire("s.out1", (rel: (1.6, 0)))
@@ -82,8 +82,9 @@ Elektrische Einrichtungen oder elektronische Schaltungen sind in der Regel sehr 
   ],
   [
     #circuit({
-      // offizielle Zap-Batterie, fest auf eine Zelle gesetzt
-      battery("bat", (0, 0), (4, 0))
+      import zap: battery
+      
+      battery("bat", (0, 0), (4, 0), cells: 1)
     })
   ], [],
   [Schalter], [Wechselschalter], [Batterie]
@@ -102,9 +103,9 @@ Die einzelnen Schaltschemen bilden die einzigen zu protokollierenden Daten. Zeic
     gutter: .5cm,
     [
       #circuit({
-        import zap: switch, wire
+        import zap: *
 
-        battery("b", (0, -1), (0, 1))
+        battery("b", (0, -1), (0, 1), cells: 1)
         switch("s", "b.out", (3, 1))
         lamp("l", "s.out", (3, -1))
         wire("l.out", (0, -1))

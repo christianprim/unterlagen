@@ -131,10 +131,7 @@
 #let beige = rgb("#cfb997")
 
 
-// offizielle Zap-Symbole
-// Die Lampe wird unverändert übernommen, die Batterie fest auf eine Zelle gesetzt.
-#let lamp = zap.lamp
-#let battery = zap.battery.with(cells: 1)
+// Zap
 
 #let toggle-switch(name, node, ..params) = {
   assert(params.pos().len() == 0, message: "ground supports only one node")
@@ -155,25 +152,6 @@
 }
 
 #let init-zap = cetz.draw.set-ctx(ctx => {
-  // Bisherige Grössen beibehalten, aber die offiziellen Zap-Symbole verwenden.
-  ctx.style.zap.insert(
-    "lamp",
-    cetz.styles.merge(ctx.style.zap.at("lamp", default: (:)), (
-      scale: auto,
-      stroke: auto,
-      radius: .47cm,
-    )),
-  )
-  ctx.style.zap.insert(
-    "battery",
-    cetz.styles.merge(ctx.style.zap.at("battery", default: (:)), (
-      scale: auto,
-      stroke: auto,
-      distance: .17,
-      plus-width: .8,
-      minus-width: .4,
-    )),
-  )
   ctx.style.zap.insert(
     "toggle-switch",
     cetz.styles.merge(ctx.style.zap.at("toggle-switch", default: (:)), (
